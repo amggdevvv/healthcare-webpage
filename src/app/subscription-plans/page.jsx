@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Button from "@/components/ui/Button";
 
 const SubscriptionPlan = () => {
@@ -58,7 +59,7 @@ const SubscriptionPlan = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <Link href="#">
             <Button
               name={"Continue"}
               type={"button"}
@@ -66,7 +67,7 @@ const SubscriptionPlan = () => {
                 "min-w-full bg-gradient-to-br from-red-900 to-zinc-900 text-white"
               }
             />
-          </div>
+          </Link>
         </div>
 
         <div className="rounded-3xl border border-gray-200 p-8">
@@ -118,7 +119,7 @@ const SubscriptionPlan = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <Link href={"#"}>
             <Button
               name={"Continue"}
               type={"button"}
@@ -126,7 +127,7 @@ const SubscriptionPlan = () => {
                 "min-w-full bg-gradient-to-br from-red-900 to-zinc-900 text-white"
               }
             />
-          </div>
+          </Link>
         </div>
 
         <div className="p-8">
@@ -181,7 +182,7 @@ const SubscriptionPlan = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <Link href={"#"}>
             <Button
               name={"Continue"}
               type={"button"}
@@ -189,7 +190,7 @@ const SubscriptionPlan = () => {
                 "min-w-full bg-gradient-to-br from-red-900 to-zinc-900 text-white"
               }
             />
-          </div>
+          </Link>
         </div>
       </div>
     </div>
