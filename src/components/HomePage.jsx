@@ -47,7 +47,7 @@ const Home = () => {
     //   </div>
     // </div>
 
-    <main className="flex h-full w-full flex-col">
+    <main className="flex h-full flex-col">
       <div className="relative flex h-screen flex-col justify-center">
         <video
           autoPlay
@@ -309,44 +309,6 @@ const Home = () => {
           </p>
         </div>
       </div>
-
-      {/* <div>
-        <div>
-          <video
-            autoPlay
-            loop
-            muted
-            id="video"
-            className="z-[-1] w-full max-w-none"
-          >
-            <source src="/videos/car-crash-animation.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div className="flex w-full flex-col items-end justify-center py-12 pb-48">
-          <div className="w-full max-w-6xl px-12 lg:px-12">
-            <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
-              <Link href="#">
-                <Button
-                  name={"View Animations"}
-                  type={"button"}
-                  className={"border border-white bg-black text-white"}
-                />
-              </Link>
-              <p className="text-sm text-black lg:w-2/3 lg:text-base">
-                You may have been a Powerpoint before. However you haven’t seen
-                anything like the ones that we design. The jury should be able
-                to understand the evidence and the legal arguments without
-                getting bogged down in technical details. Second, the
-                presentations should be persuasive. The lawyer should use clear
-                and powerful language to convince the jury that the plaintiff is
-                entitled to compensation. Third, the presentation should be
-                visually appealing and hold the attention of the jury.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <div className="relative">
         <div className="">

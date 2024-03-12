@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 const Footer = () => {
   return (
     <footer className="min-h-[140px] w-full bg-black">
-      <div className="flex gap-10 flex-col md:flex-row items-center justify-between px-12 pt-4">
+      <div className="flex gap-3 flex-col md:flex-row items-center justify-between px-12 pt-4">
         <div className="flex items-center justify-center gap-4">
           <Image
             width={50}
@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center items-center font-semibold text-gray-400 ">
-          <ul className="flex list-none flex-wrap gap-10 text-sm uppercase">
+          <ul className="flex list-none md:flex-row  flex-col gap-2 md:gap-10 text-sm uppercase">
             <li className="flex items-center justify-center duration-200 hover:text-white">
               <Link href="/">Home</Link>
             </li>
@@ -40,12 +40,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="mx-6 my-3 border-b border-gray-500" />
-      <div className=" mt-6 flex justify-between px-12">
+      <div className="py-6 flex md:flex-row flex-col-reverse justify-between items-center px-12 gap-3">
         <p className="text-xs font-bold text-gray-400">
           {" "}
           &#169; 2024 Trial Template, LLC. All Rights Reserved.
         </p>
-        <div className="flex items-center justify-center gap-6 text-gray-400">
+        <div className="flex items-center justify-center gap-6 text-gray-400 md:mt-0">
           <Link className="duration-200 hover:text-gray-500" href="#">
             <FaLinkedin size={22} />
           </Link>
