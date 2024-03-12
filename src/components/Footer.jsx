@@ -7,10 +7,9 @@ import { useParams, useSearchParams } from "next/navigation";
 import { useRouter } from "next/router";
 
 const Footer = () => {
-  
   return (
     <footer className="min-h-[140px] w-full bg-black">
-      <div className="flex items-center justify-between px-12 pt-4">
+      <div className="flex gap-10 flex-col md:flex-row items-center justify-between px-12 pt-4">
         <div className="flex items-center justify-center gap-4">
           <Image
             width={50}
@@ -20,7 +19,7 @@ const Footer = () => {
           />
         </div>
 
-        <div className=" font-semibold text-gray-400 ">
+        <div className="flex justify-center items-center font-semibold text-gray-400 ">
           <ul className="flex list-none flex-wrap gap-10 text-sm uppercase">
             <li className="flex items-center justify-center duration-200 hover:text-white">
               <Link href="/">Home</Link>

@@ -9,7 +9,7 @@ const OurClient = () => {
           <h1 className="text-4xl font-semibold tracking-wider">
             Meet Our Clients
           </h1>
-          <p>
+          <p className="font-medium text-gray-600">
             Some Of The Most Respected Law Firms In The Country Trust Trial
             Template To Deliver.
           </p>

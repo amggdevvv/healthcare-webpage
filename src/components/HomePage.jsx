@@ -47,7 +47,7 @@ const Home = () => {
     //   </div>
     // </div>
 
-    <main className="flex h-full w-full flex-col gap-10">
+    <main className="flex h-full w-full flex-col">
       <div className="relative flex h-screen flex-col justify-center">
         <video
           autoPlay
