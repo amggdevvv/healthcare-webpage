@@ -90,52 +90,51 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="">
-        <div
-          className="flex h-screen"
-          style={{
-            backgroundImage: `url("/images/spine-illustration-image.webp")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="ml-20 mt-14 w-[450px]">
-            <p className="font-semibold uppercase tracking-widest text-red-950">
-              Trial Template
-            </p>
-            <h1 className="py-3 text-4xl font-semibold tracking-wide">
-              Illustrations
-            </h1>
-            <p className="text-pretty font-semibold tracking-widest text-gray-700">
-              Illustrations can help to make complex injuries more
-              understandable.
-            </p>
-          </div>
+      <div className="relative h-screen">
+        <Image
+          src="/images/spine-illustration-image.webp"
+          alt="Timelines"
+          layout="fill"
+          objectFit="contain"
+          className="z-[-1]"
+        />
+
+        <div className="z-20 ml-20 mt-14 w-[450px]">
+          <p className="font-semibold uppercase tracking-widest text-red-950">
+            Trial Template
+          </p>
+          <h1 className="py-3 text-4xl font-semibold tracking-wide">
+            Illustrations
+          </h1>
+          <p className="text-pretty font-semibold tracking-widest text-gray-700">
+            Illustrations can help to make complex injuries more understandable.
+          </p>
         </div>
-        <div className="mx-auto mb-20 flex max-w-xl flex-col items-center justify-end  sm:flex-row md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
-          <div className="w-[300px] lg:w-[400px] xl:w-[500px]">
-            <Link href="#">
-              <Button
-                name={"View Illustrations"}
-                type={"button"}
-                className={"bg-black text-white"}
-              />
-            </Link>
-          </div>
-          <div className="w-full">
-            <p className="text-sm text-black">
-              Illustrations can help to make complex injuries more
-              understandable. This is especially important in cases involving
-              technical or medical experts who need to opine on a particular
-              aspect of the injury. Our illustrations can be animated, printed,
-              or used in a hyperlinked presentation that increases the
-              effectiveness of the work.
-            </p>
+        <div className="absolute bottom-0 right-0 z-10 mx-10 max-w-4xl pb-6">
+          <div className="w-full pt-20">
+            <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+              <Link href="#">
+                <Button
+                  name={"Find Out More"}
+                  type={"button"}
+                  className={"border border-white bg-black text-white"}
+                />
+              </Link>
+              <p className="text-sm">
+                When you work with us, you know exactly what each case will
+                cost. No Surprises. It is important that trial and litigation
+                graphics be affordable so that all law firms, regardless of
+                their size or resources, can have access to these powerful
+                tools. This will ensure that all cases, large or small, have the
+                opportunity to receive the best possible representation to tell
+                their story.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className=" flex h-screen w-full flex-col justify-center">
+      <div className="flex h-full w-full flex-col justify-center">
         <video autoPlay loop muted id="video" className="m-0 object-cover p-0">
           <source src="/videos/overview-of-injuries.mp4" type="video/mp4" />
           Your browser does not support the video tag.
