@@ -150,17 +150,162 @@ const OurClient = () => {
             </p>
             <div className="mt-6 flex gap-6">
               <Image
-                src="/images/client-image-3.webp"
+                src="/images/client-image-4.webp"
                 className="rounded-full"
                 alt="dolan"
                 width={70}
-                height={70} 
+                height={70}
               />
               <div>
                 <h2 className="text-lg font-semibold">
                   Brittany Dawn Ashley Gardiner Rogers
                 </h2>
                 <p className="text-xs text-gray-300">Scott Righthand P.C.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="">
+          <div className="flex h-28 w-full items-center justify-center rounded-t-2xl bg-gray-200">
+            <Image
+              src="/images/rls-image.webp"
+              alt="rls"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+            <p>
+              “Trial Template has expanded our firm&apos;s ability to create and
+              utilize trial graphics and presentations, which have been
+              instrumental in increasing the value of our cases. Trial Template
+              is extremely user-friendly and the staff is very responsive in
+              answering questions and aiding in the creation of our
+              presentations.”
+            </p>
+            <div className="mt-6 flex gap-6">
+              <Image
+                src="/images/client-image-5.webp"
+                className="rounded-full"
+                alt="dolan"
+                width={70}
+                height={70}
+              />
+              <div>
+                <h2 className="text-lg font-semibold">Joseph Lucia</h2>
+                <p className="text-xs text-gray-300">
+                  Rains, Lucia, Stern, St. Phalle & Silver, PC
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="">
+          <div className="flex h-28 w-full items-center justify-center rounded-t-2xl bg-gray-200">
+            <Image
+              src="/images/dolan-image.webp"
+              alt="dolan"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+            <p>
+              “In this age when most, if not all, jurors have been watching CSI
+              on TV for a decade and expect a flashy “beyond a reasonable doubt”
+              presentation to be laid out for them by counsel, Trial
+              Template&apos;s abilities to assist in telling a story visually,
+              captivating jurors and holding their attention, are beyond
+              reproach. This product has never let me down.”
+            </p>
+            <div className="mt-6 flex gap-6">
+              <Image
+                src="/images/client-image-8.webp"
+                className="rounded-full"
+                alt="dolan"
+                width={70}
+                height={70}
+              />
+              <div>
+                <h2 className="text-lg font-semibold">Matthew Gramly</h2>
+                <p className="text-xs text-gray-300">Dolan Law Firm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="">
+          <div className="flex h-28 w-full items-center justify-center rounded-t-2xl bg-gray-200">
+            <Image
+              src="/images/cartwright-image.webp"
+              alt="rls"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+            <p>
+              “I have always been a strong proponent of visual presentation, and
+              was a very early user of the first version of PowerPoint. I have
+              used it in trial, and more importantly, in mediation for well over
+              10 years. We have prepared them “in-house” with great success.
+              However, using Trial Template, with the help of Mathew, We have
+              taken it to a whole new level. The slides are customized for
+              plaintiffs trial work and include ready-made exhibits that would
+              cost many thousands of dollars for you to order them from a
+              vendor.
+              <br />
+              <br />I can&apos;t recommend this product, and service, highly
+              enough. Get it now!”
+            </p>
+            <div className="mt-6 flex gap-6">
+              <Image
+                src="/images/client-image-7.webp"
+                className="rounded-full"
+                alt="dolan"
+                width={70}
+                height={70}
+              />
+              <div>
+                <h2 className="text-lg font-semibold">
+                  Brittany Dawn Ashley Gardiner Rogers
+                </h2>
+                <p className="text-xs text-gray-300">Cartwright Law Firm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="">
+          <div className="flex h-28 w-full items-center justify-center rounded-t-2xl bg-gray-200">
+            <Image
+              src="/images/dolan-image.webp"
+              alt="dolan"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+            <p>
+              “With Trial Template I have been able to turn my ideas for trial
+              graphics into reality. Their library of animations and graphics
+              have allowed me and my firm to take our presentations to a whole
+              new and customized level. If you can imagine it, you can easily
+              produce it with Trial Template.”
+            </p>
+            <div className="mt-6 flex gap-6">
+              <Image
+                src="/images/client-image-6.webp"
+                className="rounded-full"
+                alt="dolan"
+                width={70}
+                height={70}
+              />
+              <div>
+                <h2 className="text-lg font-semibold">Chris Dolan</h2>
+                <p className="text-xs text-gray-300">Dolan Law Firm</p>
               </div>
             </div>
           </div>
