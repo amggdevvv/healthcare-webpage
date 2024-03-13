@@ -90,7 +90,7 @@ function ArticlePage() {
               OUT.
             </p>
 
-            <div className="aspect-w-16 aspect-h-9">
+            {/* <div className="aspect-w-16 aspect-h-9">
               <iframe
                 className="h-full w-full"
                 src="https://www.youtube.com/watch?v=VdOlqcg9uMQ"
@@ -98,7 +98,7 @@ function ArticlePage() {
                 allow="autoplay; fullscreen"
                 allowFullScreen
               ></iframe>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
