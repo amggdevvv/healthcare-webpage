@@ -2,19 +2,19 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const articlesData = [
-  {
-    image: "/images/articles-image-1.webp",
-    title: "2021 SFTLA Ski And CLE Presentation And Materials",
-    description: "Trial template is a world of resources…",
-  },
-  {
-    image: "/images/articles-image-2.webp",
-    title: "Everything Has Changed. We Have Too. We Can Help.",
-    description:
-      "Trial Template was created as a means to offer small to mid-sized law offices access to the same quality of litigation graphics that larger firms have access to, no matter the case value. Our goal is to tell your clients stories clearly from big to s…",
-  },
-];
+// const articlesData = [
+//   {
+//     image: "/images/articles-image-1.webp",
+//     title: "2021 SFTLA Ski And CLE Presentation And Materials",
+//     description: "Trial template is a world of resources…",
+//   },
+//   {
+//     image: "/images/articles-image-2.webp",
+//     title: "Everything Has Changed. We Have Too. We Can Help.",
+//     description:
+//       "Trial Template was created as a means to offer small to mid-sized law offices access to the same quality of litigation graphics that larger firms have access to, no matter the case value. Our goal is to tell your clients stories clearly from big to s…",
+//   },
+// ];
 
 articlesData.forEach((obj, index) => (obj.id = Date.now() + index));
 
@@ -53,7 +53,7 @@ const Article = () => {
         </div>
       </div>
       <div className="mx-16 my-[8%] flex h-full flex-col items-center">
-        {/* <div className="grid max-w-[600px] grid-cols-1 gap-6 border-b border-gray-200 pb-10 md:grid-cols-2 md:gap-0">
+        <div className="grid max-w-[600px] grid-cols-1 gap-6 border-b border-gray-200 pb-10 md:grid-cols-2 md:gap-0">
           <div>
             <Image
               src={"/images/articles-image-1.webp"}
@@ -100,9 +100,9 @@ const Article = () => {
               Read More...
             </Link>
           </div>
-        </div> */}
+        </div>
 
-        {articlesData.map((article, index) => (
+        {/* {articlesData.map((article, index) => (
           <div
             key={index}
             className="mb-8 grid max-w-[600px] grid-cols-1 gap-6 border-b border-gray-200 pb-10 md:grid-cols-2 md:gap-0"
@@ -132,7 +132,7 @@ const Article = () => {
               </Link>
             </div>
           </div>
-        ))}
+        ))} */}
 
         {/* <div className="grid grid-cols-2">
           <div>left</div>
