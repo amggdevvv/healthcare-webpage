@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 const SubscriptionPlan = () => {
   return (
     <div className="h-full w-full">
-      <div className="mx-4 my-12 grid grid-cols-1 gap-8 md:mx-20 md:grid-cols-3">
+      <div className="mx-4 my-12 grid grid-cols-1 gap-8 md:mx-20 md:grid-cols-2 lg:grid-cols-3">
         <div className="p-8">
           <div className="border-b border-gray-200 pb-8">
             <h className="text-4xl font-semibold">Basic</h>

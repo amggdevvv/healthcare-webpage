@@ -2,7 +2,24 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const articlesData = [
+  {
+    image: "/images/articles-image-1.webp",
+    title: "2021 SFTLA Ski And CLE Presentation And Materials",
+    description: "Trial template is a world of resources…",
+  },
+  {
+    image: "/images/articles-image-2.webp",
+    title: "Everything Has Changed. We Have Too. We Can Help.",
+    description:
+      "Trial Template was created as a means to offer small to mid-sized law offices access to the same quality of litigation graphics that larger firms have access to, no matter the case value. Our goal is to tell your clients stories clearly from big to s…",
+  },
+];
+
+articlesData.forEach((obj, index) => (obj.id = Date.now() + index));
+
 const Article = () => {
+  console.log("Articles data==>", articlesData);
   return (
     <div className="h-full w-full">
       <div className="flex flex-col justify-center">
@@ -35,8 +52,8 @@ const Article = () => {
           />
         </div>
       </div>
-      <div className="h-full flex flex-col items-center my-[8%] mx-16">
-        <div className="grid max-w-[600px] md:grid-cols-2 grid-cols-1 md:gap-0 gap-6 border-b border-gray-200 pb-10">
+      <div className="mx-16 my-[8%] flex h-full flex-col items-center">
+        {/* <div className="grid max-w-[600px] grid-cols-1 gap-6 border-b border-gray-200 pb-10 md:grid-cols-2 md:gap-0">
           <div>
             <Image
               src={"/images/articles-image-1.webp"}
@@ -46,19 +63,21 @@ const Article = () => {
             />
           </div>
           <div>
-            <h1 className="md:text-2xl text-xl font-medium tracking-wide">
+            <h1 className="text-xl font-medium tracking-wide md:text-2xl">
               2021 SFTLA Ski And CLE Presentation And Materials
             </h1>
             <p className="py-2 text-sm text-gray-400">
               Trial template is a world of resources…
             </p>
-            <Link href={"#"} className="text-sm font-semibold">
+            <Link
+              href={"/articles/read-article"}
+              className="text-sm font-semibold"
+            >
               Read More...
             </Link>
           </div>
-          
         </div>
-        <div className="grid max-w-[600px] md:grid-cols-2 grid-cols-1 md:gap-0 gap-6 border-b border-gray-200 py-10">
+        <div className="grid max-w-[600px] grid-cols-1 gap-6 border-b border-gray-200 py-10 md:grid-cols-2 md:gap-0">
           <div>
             <Image
               src={"/images/articles-image-2.webp"}
@@ -68,18 +87,53 @@ const Article = () => {
             />
           </div>
           <div>
-            <h1 className="md:text-2xl text-xl font-medium tracking-wide">
-              2021 SFTLA Ski And CLE Presentation And Materials
+            <h1 className="text-xl font-medium tracking-wide md:text-2xl">
+              Everything Has Changed. We Have Too. We Can Help.{" "}
             </h1>
             <p className="py-2 text-sm text-gray-400">
-              Trial template is a world of resources…
+              Trial Template was created as a means to offer small to mid-sized
+              law offices access to the same quality of litigation graphics that
+              larger firms have access to, no matter the case value. Our goal is
+              to tell your clients stories clearly from big to s…{" "}
             </p>
             <Link href={"#"} className="text-sm font-semibold">
               Read More...
             </Link>
           </div>
-          
-        </div>
+        </div> */}
+
+        {articlesData.map((article, index) => (
+          <div
+            key={index}
+            className="mb-8 grid max-w-[600px] grid-cols-1 gap-6 border-b border-gray-200 pb-10 md:grid-cols-2 md:gap-0"
+          >
+            <div>
+              <Image
+                src={article.image}
+                width={250}
+                height={250}
+                alt="article-1"
+              />
+            </div>
+            <div>
+              <h1 className="text-xl font-medium tracking-wide md:text-2xl">
+                {article.title}
+              </h1>
+              <p className="py-2 text-sm text-gray-400">
+                {article.description}{" "}
+              </p>
+              <Link
+                href={`/articles/${article.id}`}
+                as={`/articles/${article.id}`}
+                className="text-sm font-semibold"
+                passHref
+              >
+                Read More...
+              </Link>
+            </div>
+          </div>
+        ))}
+
         {/* <div className="grid grid-cols-2">
           <div>left</div>
           <div>right</div>

@@ -47,7 +47,7 @@ const Home = () => {
     //   </div>
     // </div>
 
-    <main className="flex h-full flex-col">
+    <main className="flex h-full max-w-full flex-col">
       <div className="relative flex h-screen flex-col justify-center">
         <video
           autoPlay
@@ -93,10 +93,12 @@ const Home = () => {
       <div className="relative h-screen">
         <Image
           src="/images/spine-illustration-image.webp"
-          alt="Timelines"
-          layout="fill"
-          objectFit="contain"
-          className="z-[-1]"
+          alt="spine-illustration"
+          // layout="fill"
+          width={400}
+          height={400}
+          // objectFit="contain"
+          className="z-[-1] absolute left-0 top-0 h-full w-full object-cover"
         />
 
         <div className="z-20 ml-20 mt-14 w-[450px]">
@@ -395,6 +397,9 @@ const Home = () => {
           alt="Timelines"
           layout="fill"
           objectFit="contain"
+          // width={400}
+          // height={400}
+          // className="z-[-1] absolute top-0 left-0 h-full w-full object-cover"
           className="z-[-1]"
         />
 

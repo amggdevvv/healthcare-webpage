@@ -24,7 +24,7 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden font-semibold lg:flex">
-          <ul className="flex list-none flex-wrap gap-5 text-sm uppercase">
+          <ul className="flex list-none flex-wrap gap-5 text-xs uppercase tracking-widest">
             <li className="flex items-center justify-center gap-5">
               <Link href="/">Home</Link>
               <div className="h-6 border-r border-gray-500" />
