@@ -54,24 +54,25 @@ const Home = () => {
           loop
           muted
           id="video"
-          className="absolute z-[-1] w-full max-w-none"
+          // className="absolute z-[-1] w-full max-w-none"
+          className="z-[-1] absolute left-0 top-0 h-full w-full object-cover"
         >
           <source src="/videos/video-1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <div className="absolute inset-0 flex flex-col items-center mt-20">
           <div className="text-center">
             <p className="text-sm font-bold uppercase tracking-widest text-gray-400">
               Trail Template
             </p>
-            <h2 className="w-full max-w-xs pt-3 text-lg font-semibold capitalize text-white sm:max-w-lg sm:text-4xl lg:max-w-2xl xl:max-w-3xl">
+            <h2 className="pt-3 w-[400px] text-lg font-semibold capitalize text-white  sm:text-4xl">
               Flat Rate Subscriptions For Trial Graphics
             </h2>
             <p className="pt-3 text-sm font-bold tracking-wide text-gray-400">
               Litigation & Medical Graphics, Illustrations and Animations
             </p>
           </div>
-          <div className="mb-12 mt-8 flex gap-6 sm:mt-16">
+          <div className="mb-12 mt-8 flex flex-col sm:flex-row gap-6 sm:mt-16">
             <Link href="#">
               <Button
                 name={"Explore This"}
@@ -95,13 +96,13 @@ const Home = () => {
           src="/images/spine-illustration-image.webp"
           alt="spine-illustration"
           // layout="fill"
-          width={400}
-          height={400}
+          width={1000}
+          height={1000}
           // objectFit="contain"
           className="z-[-1] absolute left-0 top-0 h-full w-full object-cover"
         />
 
-        <div className="z-20 ml-20 mt-14 w-[450px]">
+        <div className="z-20 ml-20 mt-14 max-w-[450px]">
           <p className="font-semibold uppercase tracking-widest text-red-950">
             Trial Template
           </p>
@@ -244,8 +245,8 @@ const Home = () => {
           <Image
             src="/images/ayers-rd-animation.webp"
             alt="ayers-rd-animation"
-            width={500}
-            height={500}
+            width={1000}
+            height={1000}
             className="h-full w-full object-cover"
           />
         </div>
@@ -395,12 +396,12 @@ const Home = () => {
         <Image
           src="/images/Pulmonary-Hypertrophy-image.webp"
           alt="Timelines"
-          layout="fill"
-          objectFit="contain"
-          // width={400}
-          // height={400}
-          // className="z-[-1] absolute top-0 left-0 h-full w-full object-cover"
-          className="z-[-1]"
+          // layout="fill"
+          // objectFit="contain"
+          width={1000}
+          height={1000}
+          className="z-[-1] absolute top-0 left-0 h-full w-full object-cover"
+          // className="z-[-1]"
         />
 
         <div className="z-20 ml-20 mt-14 w-[450px]">

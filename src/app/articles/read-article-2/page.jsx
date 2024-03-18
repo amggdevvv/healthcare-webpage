@@ -49,56 +49,57 @@ function ArticlePage() {
             />
           </div>
         </div>
-        <div className="mx-10">
+        <div className="mx-20">
           <div className="mx-auto my-16 flex max-w-[900px] flex-col items-center justify-center text-center">
             <Image
-              src="/images/articles-image-1.webp"
+              src="/images/articles-image-2.webp"
               alt="Main-Logo"
               width={600}
               height={600}
             />
             <p className="pt-8 font-semibold tracking-wider">
-              2021 SFTLA Ski And CLE Presentation And Materials
-            </p>
-            <p className="pt-2 tracking-wider text-gray-500">
-              A RESOURCE LIST OF VENDORS AND RESOURCES.
-            </p>
-            <p className="py-6 text-gray-500">
-              We were honored to present at this year&apos;s SFTLA Ski and CLE
-              conference where we discussed various graphic resources that will
-              decrease your case costs and increase case value. Thank you for
-              attending! Grab your “Goody Bag” resources by clicking the link
-              below. Your download will include a pre-made file structure to
-              help you organize graphics projects as well as a file of tutorials
-              containing resources for you including how to use Google Earth,
-              how to give effective presentations, and using radiology software.
-              A PDF version of our SFTLA presentation is also included.
-            </p>
-            <Link href={"#"}>
-              <p className="pb-6 font-medium tracking-wider text-pink-500 hover:text-blue-950">
-                GET YOUR SFTLA GOODY BAG BY CLICKING HERE
-              </p>
-            </Link>
-            <p className="text-gray-500">
-              CONTACT US by calling 866.504.8647 or email
-              info@trialtemplate.com. You can email Matthew Kimmins directly at
-              matthew.kimmins@trialtemplate.com
-            </p>
-            <p className="py-6 text-gray-500">
-              TRIAL TEMPLATE IS HERE TO ASSIST YOU. WHETHER OR NOT YOU ARE A
-              CUSTOMER, WE ARE ALWAYS AVAILABLE TO ANSWER QUESTIONS AND HELP
-              OUT.
+              Everything Has Changed. We Have Too. We Can Help.
             </p>
 
-            {/* <div className="aspect-w-16 aspect-h-9">
+            <p className="py-6 text-gray-500">
+              Trial Template was created as a means to offer small to mid-sized
+              law offices access to the same quality of litigation graphics that
+              larger firms have access to, no matter the case value. Our goal is
+              to tell your clients stories clearly from big to small trials,
+              mediations and arbitrations. <br /> <br />
+              Now, so much has changed. We are all learning what it is to make
+              sacrifices and face circumstances beyond our control. We know
+              these times are difficult so we are reducing the cost of Trial
+              Template to $8000 for the year and increasing available custom
+              graphics time which now includes marketing. In addition to
+              litigation graphics, firms will have access to utilize their
+              yearly allotted 20+ Trial Template custom hours with our staff to
+              help create videos, illustrations, 3d-modeling and animations,
+              website design, print production, and more. <br /> <br />
+              We are proud to say that since sheltering in place, we have helped
+              several clients increase their case value and come to successful
+              settlements in mediation. We have created stunning marketing
+              campaigns so that our clients can continue to put out their
+              message and earn the attention of new clients, and we have helped
+              several clients revamp out of date graphics and tackle projects
+              that had been set to the back burner.
+            </p>
+
+            <div className="aspect-auto  w-full">
               <iframe
-                className="h-full w-full"
-                src="https://www.youtube.com/watch?v=VdOlqcg9uMQ"
-                title="Embedded Vimeo Video"
-                allow="autoplay; fullscreen"
-                allowFullScreen
+                title="vimeo-player"
+                src="https://player.vimeo.com/video/373050487?h=8cd1dbfb55"
+                width="800"
+                height="500"
+                className="w-full"
+                frameborder="0"
+                allowfullscreen
               ></iframe>
-            </div> */}
+              <p className="py-12 text-gray-500">
+                We offer the highest return on investment and we want to help
+                you get back up on your feet. Let&apos;s get to work
+              </p>
+            </div>
           </div>
         </div>
       </div>

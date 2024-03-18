@@ -49,7 +49,7 @@ function ArticlePage() {
             />
           </div>
         </div>
-        <div className="mx-10">
+        <div className="mx-20">
           <div className="mx-auto my-16 flex max-w-[900px] flex-col items-center justify-center text-center">
             <Image
               src="/images/articles-image-1.webp"
@@ -75,7 +75,7 @@ function ArticlePage() {
               A PDF version of our SFTLA presentation is also included.
             </p>
             <Link href={"#"}>
-              <p className="pb-6 font-medium tracking-wider text-pink-500 hover:text-blue-950">
+              <p className="pb-6 font-medium tracking-wider text-[#c36] hover:text-blue-950">
                 GET YOUR SFTLA GOODY BAG BY CLICKING HERE
               </p>
             </Link>
@@ -90,15 +90,17 @@ function ArticlePage() {
               OUT.
             </p>
 
-            {/* <div className="aspect-w-16 aspect-h-9">
+            <div className="aspect-auto w-full">
               <iframe
-                className="h-full w-full"
-                src="https://www.youtube.com/watch?v=VdOlqcg9uMQ"
-                title="Embedded Vimeo Video"
-                allow="autoplay; fullscreen"
-                allowFullScreen
+                title="vimeo-player"
+                src="https://player.vimeo.com/video/294456446?h=2210fa8966"
+                width="800"
+                height="500"
+                className="w-full"
+                frameborder="0"
+                allowfullscreen
               ></iframe>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

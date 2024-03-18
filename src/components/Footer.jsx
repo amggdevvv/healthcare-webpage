@@ -34,6 +34,9 @@ const Footer = () => {
               <Link href="/our-client">Our Client</Link>
             </li>
             <li className="flex items-center justify-center duration-200 hover:text-white">
+              <Link href="/our-client">Portfolios</Link>
+            </li>
+            <li className="flex items-center justify-center duration-200 hover:text-white">
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
