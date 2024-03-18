@@ -16,10 +16,10 @@ import Link from "next/link";
 //   },
 // ];
 
-articlesData.forEach((obj, index) => (obj.id = Date.now() + index));
+// articlesData.forEach((obj, index) => (obj.id = Date.now() + index));
 
 const Article = () => {
-  console.log("Articles data==>", articlesData);
+  // console.log("Articles data==>", articlesData);
   return (
     <div className="h-full w-full">
       <div className="flex flex-col justify-center">
@@ -70,7 +70,7 @@ const Article = () => {
               Trial template is a world of resources…
             </p>
             <Link
-              href={"/articles/read-article"}
+              href={"/articles/read-article-1"}
               className="text-sm font-semibold"
             >
               Read More...
@@ -96,7 +96,7 @@ const Article = () => {
               larger firms have access to, no matter the case value. Our goal is
               to tell your clients stories clearly from big to s…{" "}
             </p>
-            <Link href={"#"} className="text-sm font-semibold">
+            <Link href={"/articles/read-article-2"} className="text-sm font-semibold">
               Read More...
             </Link>
           </div>

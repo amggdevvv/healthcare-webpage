@@ -64,7 +64,7 @@ const SubscriptionPlan = () => {
               name={"Continue"}
               type={"button"}
               className={
-                "min-w-full bg-gradient-to-br from-red-900 to-zinc-900 text-white"
+                "min-w-full bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] text-white"
               }
             />
           </Link>
@@ -124,7 +124,7 @@ const SubscriptionPlan = () => {
               name={"Continue"}
               type={"button"}
               className={
-                "min-w-full bg-gradient-to-br from-red-900 to-zinc-900 text-white"
+                "min-w-full bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] text-white"
               }
             />
           </Link>
@@ -187,7 +187,7 @@ const SubscriptionPlan = () => {
               name={"Continue"}
               type={"button"}
               className={
-                "min-w-full bg-gradient-to-br from-red-900 to-zinc-900 text-white"
+                "min-w-full bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] text-white"
               }
             />
           </Link>

@@ -25,7 +25,7 @@ const OurClient = () => {
               height={250}
             />
           </div>
-          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+          <div className="rounded-b-2xl bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] p-6 text-white">
             <p>
               “I highly recommend Trial Template for all graphics and
               presentation projects. If you have a story to tell in trial, Trial
@@ -57,7 +57,7 @@ const OurClient = () => {
               height={250}
             />
           </div>
-          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+          <div className="rounded-b-2xl bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] p-6 text-white">
             <p>
               “100% of my cases are Plaintiffs’ personal injury. I use Trial
               Template 100% of the time and would not think of approaching
@@ -103,7 +103,7 @@ const OurClient = () => {
               height={250}
             />
           </div>
-          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+          <div className="rounded-b-2xl bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] p-6 text-white">
             <p>
               “Trial Template is an essential tool for preparing your
               presentations for opening statements, direct, cross examination
@@ -136,7 +136,7 @@ const OurClient = () => {
               height={250}
             />
           </div>
-          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+          <div className="rounded-b-2xl bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] p-6 text-white">
             <p>
               “Trial Template creates presentations that are invaluable with the
               modern jury. They cultivate an effortless flow of graphics that
@@ -175,7 +175,7 @@ const OurClient = () => {
               height={250}
             />
           </div>
-          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+          <div className="rounded-b-2xl bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] p-6 text-white">
             <p>
               “Trial Template has expanded our firm&apos;s ability to create and
               utilize trial graphics and presentations, which have been
@@ -211,7 +211,7 @@ const OurClient = () => {
               height={250}
             />
           </div>
-          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+          <div className="rounded-b-2xl bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] p-6 text-white">
             <p>
               “In this age when most, if not all, jurors have been watching CSI
               on TV for a decade and expect a flashy “beyond a reasonable doubt”
@@ -245,7 +245,7 @@ const OurClient = () => {
               height={250}
             />
           </div>
-          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+          <div className="rounded-b-2xl bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] p-6 text-white">
             <p>
               “I have always been a strong proponent of visual presentation, and
               was a very early user of the first version of PowerPoint. I have
@@ -287,7 +287,7 @@ const OurClient = () => {
               height={250}
             />
           </div>
-          <div className="rounded-b-2xl bg-gradient-to-br from-red-950 to-zinc-900 p-6 text-white">
+          <div className="rounded-b-2xl bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] p-6 text-white">
             <p>
               “With Trial Template I have been able to turn my ideas for trial
               graphics into reality. Their library of animations and graphics

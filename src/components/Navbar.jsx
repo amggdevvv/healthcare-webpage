@@ -6,13 +6,16 @@ import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   return (
     <header className="w-full">
-      <div className="bg-gradient-to-br from-red-900 to-zinc-900 py-2 text-white">
-        <p className="text-center italic">
-          “With Trial Template I have been able to turn my ideas for trial
-          graphics into reality…” — Chris Dolan, The Dolan Law Firm
+      <div className="bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] py-3 ">
+        <p className="text-center text-sm font-semibold tracking-wider text-white">
+          <span className="italic">
+            “With Trial Template I have been able to turn my ideas for trial
+            graphics into reality…”
+          </span>
+          — Chris Dolan, The Dolan Law Firm
         </p>
       </div>
-      <div className="flex items-center justify-between bg-white lg:px-24 px-8 py-1">
+      <div className="flex items-center justify-between bg-white px-8 py-1 lg:px-24">
         <Link href="/" className="flex items-center justify-center gap-4">
           <Image
             width={50}
@@ -40,6 +43,11 @@ const Navbar = () => {
             <li className="flex items-center justify-center gap-5">
               <Link href="/our-client">Our Client</Link>
               <div className="h-6 border-r border-gray-500" />
+            </li>
+            <li className="flex items-center justify-center gap-5">
+              <Link href="/contact">Portfolios</Link>
+              <div className="h-6 border-r border-gray-500" />
+
             </li>
             <li className="flex items-center justify-center gap-5">
               <Link href="/contact">Contact</Link>

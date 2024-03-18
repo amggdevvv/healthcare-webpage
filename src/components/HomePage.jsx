@@ -152,7 +152,7 @@ const Home = () => {
                 />
               </Link>
               <p className="text-sm text-white lg:w-2/3 lg:text-base">
-                You may have been a Powerpoint before. However you haven’t seen
+                You may have been a Powerpoint before. However you haven&apos;t seen
                 anything like the ones that we design. The jury should be able
                 to understand the evidence and the legal arguments without
                 getting bogged down in technical details. Second, the
@@ -261,7 +261,7 @@ const Home = () => {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="order-2 flex flex-col justify-center bg-gradient-to-br from-red-950 to-zinc-900 px-16 py-16 text-white">
+        <div className="order-2 flex flex-col justify-center bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] px-16 py-16 text-white">
           <h1 className="py-3 text-2xl font-semibold tracking-wide">
             We&apos;re Creative With Medical Records
           </h1>
@@ -273,7 +273,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="order-4 flex flex-col justify-center bg-gradient-to-br from-red-950 to-zinc-900 px-16 py-16 text-white sm:order-3">
+        <div className="order-4 flex flex-col justify-center bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] px-16 py-16 text-white sm:order-3">
           <h1 className="py-3 text-2xl font-semibold tracking-wide">
             From Flat Slices To An Animated 3D Model
           </h1>
@@ -299,7 +299,7 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="order-6 flex flex-col justify-center bg-gradient-to-br from-red-950 to-zinc-900 px-16 py-16 text-white">
+        <div className="order-6 flex flex-col justify-center bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] px-16 py-16 text-white">
           <h1 className="py-3 text-2xl font-semibold tracking-wide">
             Humanize The Injuries With A Face
           </h1>
