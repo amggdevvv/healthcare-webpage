@@ -9,7 +9,7 @@ const SubscriptionPlan = () => {
       <div className="mx-4 my-12 grid grid-cols-1 gap-8 md:mx-20 md:grid-cols-2 lg:grid-cols-3">
         <div className="p-8">
           <div className="border-b border-gray-200 pb-8">
-            <h className="text-4xl font-semibold">Basic</h>
+            <h1 className="text-4xl font-semibold">Basic</h1>
             <p className="pt-3 font-semibold text-gray-700">3 Cases</p>
           </div>
           <div className="border-b border-gray-200 py-6">
