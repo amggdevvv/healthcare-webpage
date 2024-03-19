@@ -47,7 +47,7 @@ const Home = () => {
     //   </div>
     // </div>
 
-    <main className="flex h-full max-w-full flex-col">
+    <main className="flex h-full w-full flex-col">
       <div className="relative flex h-screen flex-col justify-center">
         <video
           autoPlay
@@ -142,7 +142,7 @@ const Home = () => {
           <source src="/videos/overview-of-injuries.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="flex w-full flex-col items-end justify-center bg-black py-12 pb-48">
+        <div className="flex w-full flex-col items-end justify-center bg-black py-12 pb-32">
           <div className="w-full max-w-6xl px-12 lg:px-12">
             <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
               <Link href="#">
@@ -167,7 +167,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-0 grid grid-cols-1 bg-white lg:grid-cols-3 xl:mt-20">
+      <div className="grid grid-cols-1 bg-white lg:grid-cols-3 ">
         <div className="col-span-1 lg:col-span-1">
           <div className="m-10 ">
             <div className="border-b border-gray-200 pb-6">
