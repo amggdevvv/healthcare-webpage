@@ -3,7 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
 
-const SubscriptionPlan = () => {
+const SubscriptionPlansPage = () => {
+  //   const router = useRouter();
+
+  //   const handlePlanButtonClick = (plan) => {
+  //     router.push(`/subscription-plans/${plan}`);
+  //   };
+
   return (
     <div className="h-full w-full">
       <div className="mx-4 my-12 grid grid-cols-1 gap-8 md:mx-20 md:grid-cols-2 lg:grid-cols-3">
@@ -59,12 +65,13 @@ const SubscriptionPlan = () => {
               </li>
             </ul>
           </div>
-          <Link href="#">
+
+          <Link href={"/subscription-plans/plans-checkout"}>
             <Button
               name={"Continue"}
               type={"button"}
               className={
-                "min-w-full bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] text-white"
+                "min-w-full bg-[radial-gradient(54.97%_272.54%_at_27.36%_-25.72%,_#66181f_75%,_rgba(0,_0,_0,_.9)_100%)] text-white"
               }
             />
           </Link>
@@ -72,7 +79,7 @@ const SubscriptionPlan = () => {
 
         <div className="rounded-3xl border border-gray-200 p-8">
           <div className="border-b border-gray-200 pb-8">
-            <h className="text-4xl font-semibold">Pro</h>
+            <h1 className="text-4xl font-semibold">Pro</h1>
             <p className="pt-3 font-semibold text-gray-700">5 Cases</p>
           </div>
           <div className="border-b border-gray-200 py-6">
@@ -119,12 +126,12 @@ const SubscriptionPlan = () => {
               </li>
             </ul>
           </div>
-          <Link href={"#"}>
+          <Link href={"/subscription-plans/plans-checkout"}>
             <Button
               name={"Continue"}
               type={"button"}
               className={
-                "min-w-full bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] text-white"
+                "min-w-full bg-[radial-gradient(54.97%_272.54%_at_27.36%_-25.72%,_#66181f_75%,_rgba(0,_0,_0,_.9)_100%)] text-white"
               }
             />
           </Link>
@@ -132,7 +139,7 @@ const SubscriptionPlan = () => {
 
         <div className="p-8">
           <div className="border-b border-gray-200 pb-8">
-            <h className="text-4xl font-semibold">Platinum</h>
+            <h1 className="text-4xl font-semibold">Platinum</h1>
             <p className="pt-3 font-semibold text-gray-700">8 Cases</p>
           </div>
           <div className="border-b border-gray-200 py-6">
@@ -182,12 +189,12 @@ const SubscriptionPlan = () => {
               </li>
             </ul>
           </div>
-          <Link href={"#"}>
+          <Link href={"/subscription-plans/plans-checkout"}>
             <Button
               name={"Continue"}
               type={"button"}
               className={
-                "min-w-full bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] text-white"
+                "min-w-full bg-[radial-gradient(54.97%_272.54%_at_27.36%_-25.72%,_#66181f_75%,_rgba(0,_0,_0,_.9)_100%)] text-white"
               }
             />
           </Link>
@@ -197,4 +204,4 @@ const SubscriptionPlan = () => {
   );
 };
 
-export default SubscriptionPlan;
+export default SubscriptionPlansPage;
