@@ -27,7 +27,7 @@ function PortFolios() {
           </div>
         </Link>
 
-        <Link href={"/portfolios/portfolio1"} className="group cursor-pointer">
+        <Link href={"/portfolios/portfolio2"} className="group cursor-pointer">
           <div className="relative border-b border-gray-200 group-hover:opacity-100">
             <video autoPlay loop muted id="video" className="object-contain">
               <source src="/videos/video-1.mp4" type="video/mp4" />
@@ -48,7 +48,7 @@ function PortFolios() {
           </div>
         </Link>
 
-        <Link href={"/portfolios/portfolio1"} className="group cursor-pointer">
+        <Link href={"/portfolios/portfolio3"} className="group cursor-pointer">
           <div className="relative border-b border-gray-200 group-hover:opacity-100">
             <video autoPlay loop muted id="video" className="object-contain">
               <source src="/videos/video-1.mp4" type="video/mp4" />

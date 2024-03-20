@@ -10,13 +10,15 @@ const PortfolioPage = () => {
             Trial Template
           </p>
           <h1 className="py-4 text-5xl font-semibold tracking-widest">
-            Truck Animation
+            Custom Medical Graphics And Animations{" "}
           </h1>
           <p className="text-lg  font-semibold text-gray-500">
-            Spearheading truck animations for the legal landscape. From initial
-            demands to court confrontations, our animations vividly depict truck
-            scenarios, enhancing comprehension and bolstering case impact.
-            Efficient, precision-driven, and crafted to captivate the courtroom.
+            In addition to being helpful for understanding injuries, animations
+            can also be used to explain medical procedures. For example, it can
+            show how a surgeon will repair a broken bone or spinal fusion. Or,
+            it can depict the steps involved in a particular medical operation.
+            This can be helpful for jurors to understand the nature of the
+            injuries and the treatment that the injured person has received.
           </p>
         </div>
         <div className="mt-8 flex justify-between border-b border-gray-200 pb-2">
@@ -27,7 +29,7 @@ const PortfolioPage = () => {
           <div className="col-span-2 aspect-auto w-full">
             <iframe
               title="vimeo-player"
-              src="https://player.vimeo.com/video/898607139?h=cc3dbdaaac"
+              src="https://player.vimeo.com/video/742413974?h=9abac872fc"
               width="800"
               height="500"
               className="w-full"
@@ -39,14 +41,14 @@ const PortfolioPage = () => {
             <p className="border-b border-gray-200 text-lg font-semibold uppercase tracking-widest text-red-950">
               Other Projects
             </p>
-            <Link href={"/portfolios/portfolio2"} className="">
+            <Link href={"/portfolios/portfolio1"} className="">
               <h2 className="py-3 text-2xl font-semibold tracking-wide">
-                Custom Medical Graphics and Animations{" "}
+                Truck Animation{" "}
               </h2>
 
               <p className="border-b border-gray-200 pb-8 font-semibold text-gray-600">
-                In addition to being helpful for understanding injuries,
-                animations can also be used to explain medical...
+                Spearheading truck animations for the legal landscape. From
+                initial demands to court confrontations, our animations...
               </p>
             </Link>
             <Link href={"/portfolios/portfolio3"} className="">
@@ -54,7 +56,7 @@ const PortfolioPage = () => {
                 Surgical Animations{" "}
               </h2>
 
-              <p className="font-semibold text-gray-600 ">
+              <p className="text-sm font-semibold text-gray-600 ">
                 At the vanguard of surgical animations for the legal domain.
                 From demands to courtroom engagements, our animations depict
                 surgical...

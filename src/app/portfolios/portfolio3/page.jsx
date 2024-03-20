@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const PortfolioPage = () => {
   return (
@@ -10,13 +11,14 @@ const PortfolioPage = () => {
             Trial Template
           </p>
           <h1 className="py-4 text-5xl font-semibold tracking-widest">
-            Truck Animation
+            Surgical Animations{" "}
           </h1>
           <p className="text-lg  font-semibold text-gray-500">
-            Spearheading truck animations for the legal landscape. From initial
-            demands to court confrontations, our animations vividly depict truck
-            scenarios, enhancing comprehension and bolstering case impact.
-            Efficient, precision-driven, and crafted to captivate the courtroom.
+            At the vanguard of surgical animations for the legal domain. From
+            demands to courtroom engagements, our animations depict surgical
+            procedures with unmatched clarity, enhancing understanding and
+            amplifying case potency. Fast-paced, intricate, and unequivocally
+            persuasive.
           </p>
         </div>
         <div className="mt-8 flex justify-between border-b border-gray-200 pb-2">
@@ -24,40 +26,38 @@ const PortfolioPage = () => {
           <p>February 26, 2024</p>
         </div>
         <div className="mt-6 grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div className="col-span-2 aspect-auto w-full">
-            <iframe
-              title="vimeo-player"
-              src="https://player.vimeo.com/video/898607139?h=cc3dbdaaac"
-              width="800"
-              height="500"
-              className="w-full"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
+        <div className="col-span-2">
+          <Image
+            src="/images/sugical-animation.jpg"
+            alt="spine-illustration"
+            width={1000}
+            height={1000}
+            layout="resposnive"
+            className="object-cover"
+          />
+        </div>
           <div className="col-span-1 border-l border-gray-200 px-8">
             <p className="border-b border-gray-200 text-lg font-semibold uppercase tracking-widest text-red-950">
               Other Projects
             </p>
-            <Link href={"/portfolios/portfolio2"} className="">
+            <Link href={"/portfolios/portfolio1"} className="">
               <h2 className="py-3 text-2xl font-semibold tracking-wide">
-                Custom Medical Graphics and Animations{" "}
+                Truck Animation{" "}
               </h2>
 
               <p className="border-b border-gray-200 pb-8 font-semibold text-gray-600">
-                In addition to being helpful for understanding injuries,
-                animations can also be used to explain medical...
+                Spearheading truck animations for the legal landscape. From
+                initial demands to court confrontations, our animations...
               </p>
             </Link>
             <Link href={"/portfolios/portfolio3"} className="">
               <h2 className="py-3 text-2xl font-semibold tracking-wide">
-                Surgical Animations{" "}
+                Custom Medical Graphics And Animations{" "}
               </h2>
 
-              <p className="font-semibold text-gray-600 ">
-                At the vanguard of surgical animations for the legal domain.
-                From demands to courtroom engagements, our animations depict
-                surgical...
+              <p className="text-sm font-semibold text-gray-600 ">
+                In addition to being helpful for understanding injuries,
+                animations can also be used to explain medical...
               </p>
             </Link>
           </div>
