@@ -7,10 +7,6 @@ import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
 
-  // const handleMenuToggle = ()=>{
-  //   setMenuToggle(false)
-  // }
-
   return (
     <header className="w-full">
       <div className="bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] py-3 ">
@@ -78,38 +74,38 @@ const Navbar = () => {
           >
             <ul className="flex list-none flex-col items-start justify-end over tracking-wider">
               <li
-                // onClick={handlePopUp}
+                onClick={()=>setMenuToggle(!menuToggle)}
                 className="cursor-pointer text-[16px] font-medium text-white bg-[#3f444b] w-full px-5 py-2"
               >
                 <Link href={"/"}>Home </Link>
               </li>
               <li
-                // onClick={handlePopUp}
+                onClick={()=>setMenuToggle(!menuToggle)}
                 className="cursor-pointer text-[16px] font-medium text-gray-500 w-full px-5 py-2 hover:bg-[#3f444b] hover:text-white"
               >
                 <Link href="/subscription-plans">Subscription Plans</Link>
               </li>
               <li
-                // onClick={handlePopUp}
+                onClick={()=>setMenuToggle(!menuToggle)}
                 className="cursor-pointer text-[16px] font-medium text-gray-500 w-full px-5 py-2 hover:bg-[#3f444b] hover:text-white"
               >
                 <Link href="/articles">Articles</Link>
               </li>
 
               <li
-                // onClick={handlePopUp}
+                onClick={()=>setMenuToggle(!menuToggle)}
                 className="cursor-pointer text-[16px] font-medium text-gray-500 w-full px-5 py-2 hover:bg-[#3f444b] hover:text-white"
               >
                 <Link href="/our-client">Our Clients</Link>
               </li>
               <li
-                // onClick={handlePopUp}
+                onClick={()=>setMenuToggle(!menuToggle)}
                 className="cursor-pointer text-[16px] font-medium text-gray-500 w-full px-5 py-2 hover:bg-[#3f444b] hover:text-white"
               >
                 <Link href="/portfolios">Portfolios</Link>
               </li>
               <li
-                // onClick={handlePopUp}
+                onClick={()=>setMenuToggle(!menuToggle)}
                 className="cursor-pointer text-[16px] font-medium text-gray-500 w-full px-5 py-2 hover:bg-[#3f444b] hover:text-white"
               >
                 <Link href="/contact">Contact</Link>
