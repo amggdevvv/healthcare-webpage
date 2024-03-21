@@ -56,7 +56,7 @@ const PortfolioPage = () => {
                 Surgical Animations{" "}
               </h2>
 
-              <p className="text-sm font-semibold text-gray-600 ">
+              <p className="font-semibold text-gray-600 ">
                 At the vanguard of surgical animations for the legal domain.
                 From demands to courtroom engagements, our animations depict
                 surgical...

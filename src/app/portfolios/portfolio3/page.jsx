@@ -55,7 +55,7 @@ const PortfolioPage = () => {
                 Custom Medical Graphics And Animations{" "}
               </h2>
 
-              <p className="text-sm font-semibold text-gray-600 ">
+              <p className="font-semibold text-gray-600 ">
                 In addition to being helpful for understanding injuries,
                 animations can also be used to explain medical...
               </p>
