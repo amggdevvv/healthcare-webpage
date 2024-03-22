@@ -18,7 +18,7 @@ const PlanCard = ({ onClick, isActive, title, price }) => {
       onClick={onClick}
       className={`flex cursor-pointer justify-between rounded-md border border-[#ddd] p-4 font-semibold ${
         isActive
-          ? "bg-[radial-gradient(54.97%_272.54%_at_27.36%_-25.72%,_#66181f_75%,_rgba(0,_0,_0,_.9)_100%)] text-white"
+          ? "bg-[radial-gradient(54.97%_272.54%_at_27.36%_-134.72%,_#66181f_0,_rgb(20_0_0)_100%)] text-white"
           : "text-gray-800"
       }`}
     >

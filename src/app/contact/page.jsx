@@ -1,9 +1,30 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
+import Button from "@/components/ui/Button";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phone: "",
+    email: "",
+    options: "",
+    message: "",
+  });
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    console.log("User Form Data==>", formData);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
   return (
-    <div>
+    <div className="">
       <div className="relative h-screen w-full overflow-hidden">
         <video
           autoPlay
@@ -17,15 +38,18 @@ const Contact = () => {
         </video>
       </div>
       <div className="absolute left-0 top-1/4 z-10 flex w-full flex-col items-center px-6 text-center">
-        <form className="mx-auto flex w-full flex-col justify-center gap-6 rounded-lg bg-white/80 p-12 md:w-[450px]">
-          <div className="flex flex-col justify-center items-center">
+        <form
+          onSubmit={handleFormSubmit}
+          className="mx-auto flex w-full flex-col justify-center gap-6 rounded-lg bg-white/80 p-12 py-10 md:w-[450px]"
+        >
+          <div className="flex flex-col items-center justify-center">
             <Image
               src="/images/main-logo.webp"
               alt="Main-Logo"
               width={90}
               height={90}
             />
-            <h1 className="text-2xl font-semibold tracking-widest pt-3">
+            <h1 className="pt-3 text-2xl font-semibold tracking-widest">
               SCHEDULE A DEMO
             </h1>
             <p className="py-1 uppercase tracking-wider text-red-950">
@@ -39,33 +63,43 @@ const Contact = () => {
             <input
               className="rounded-md border border-red-900/50 px-3 py-2 outline-none"
               type="text"
+              name="fullName"
               placeholder="Full Name"
+              onChange={handleInputChange}
+              defaultValue={formData.fullName}
             />
             <input
               className="rounded-md border border-red-900/50 px-3 py-2 outline-none"
               type="tel"
+              name="phone"
               placeholder="Phone"
+              onChange={handleInputChange}
+              defaultValue={formData.phone}
             />
             <input
               className="rounded-md border border-red-900/50 px-3 py-2 outline-none"
               type="email"
+              name="email"
               placeholder="Email"
+              onChange={handleInputChange}
+              defaultValue={formData.email}
             />
             <div className="relative">
               <select
                 className="block w-full appearance-none rounded-md border border-red-900/50 px-3 py-2 outline-none"
-                name="professional-category"
-                id="professional-category"
+                name="country"
+                id="country"
+                onChange={handleInputChange}
               >
-                <option value="" disabled selected>
+                <option defaultValue="" disabled selected>
                   Select Professional Category
                 </option>
-                <option value="attorney">Attorney</option>
-                <option value="legal-professional">Legal Professional</option>
-                <option value="medical-professional">
+                <option defaultValue="attorney">Attorney</option>
+                <option defaultValue="legal-professional">Legal Professional</option>
+                <option defaultValue="medical-professional">
                   Medical Professional
                 </option>
-                <option value="administrative-professional">
+                <option defaultValue="administrative-professional">
                   Administrative Professional
                 </option>
               </select>
@@ -83,8 +117,16 @@ const Contact = () => {
               className="rounded-md border border-red-900/50 px-3 py-2 outline-none"
               cols="30"
               rows="3"
+              name="message"
               placeholder="Message"
+              onChange={handleInputChange}
+              defaultValue={formData.message}
             ></textarea>
+            <Button
+              name={"Connect With Us"}
+              type={"submit"}
+              className={"min-w-full bg-black text-white"}
+            />
           </div>
         </form>
       </div>
