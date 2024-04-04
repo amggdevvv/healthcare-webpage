@@ -48,7 +48,7 @@ const Navbar = () => {
               <div className="h-6 border-r border-gray-500" />
             </li>
             <li className="flex items-center justify-center gap-5">
-              <Link href="/portfolios">Portfolios</Link>
+              <Link href="/portfolios">Portfolio</Link>
               <div className="h-6 border-r border-gray-500" />
             </li>
             <li className="flex items-center justify-center gap-5">
