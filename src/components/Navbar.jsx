@@ -102,7 +102,7 @@ const Navbar = () => {
                 onClick={()=>setMenuToggle(!menuToggle)}
                 className="cursor-pointer text-[16px] font-medium text-gray-500 w-full px-5 py-2 hover:bg-[#3f444b] hover:text-white"
               >
-                <Link href="/portfolios">Portfolios</Link>
+                <Link href="/portfolios">Portfolio</Link>
               </li>
               <li
                 onClick={()=>setMenuToggle(!menuToggle)}
