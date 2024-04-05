@@ -55,25 +55,25 @@ const Home = () => {
           muted
           id="video"
           // className="absolute z-[-1] w-full max-w-none"
-          className="z-[-1] absolute left-0 top-0 h-full w-full object-cover"
+          className="absolute left-0 top-0 z-[-1] h-full w-full object-cover"
         >
           <source src="/videos/video-1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 flex flex-col items-center mt-20">
+        <div className="absolute inset-0 mt-20 flex flex-col items-center">
           <div className="text-center">
             <p className="text-sm font-bold uppercase tracking-widest text-gray-400">
               Trail Template
             </p>
-            <h2 className="pt-3 w-[400px] text-lg font-semibold capitalize text-white  sm:text-4xl">
+            <h2 className="w-[400px] pt-3 text-lg font-semibold capitalize text-white  sm:text-4xl">
               Flat Rate Subscriptions For Trial Graphics
             </h2>
             <p className="pt-3 text-sm font-bold tracking-wide text-gray-400">
               Litigation & Medical Graphics, Illustrations and Animations
             </p>
           </div>
-          <div className="mb-12 mt-8 flex flex-col sm:flex-row gap-6 sm:mt-16">
-            <Link href="#">
+          <div className="mb-12 mt-8 flex flex-col gap-6 sm:mt-16 sm:flex-row">
+            <Link href="/subscription-plans">
               <Button
                 name={"Explore This"}
                 type={"button"}
@@ -99,7 +99,7 @@ const Home = () => {
           width={1000}
           height={1000}
           // objectFit="contain"
-          className="z-[-1] absolute left-0 top-0 h-full w-full object-cover"
+          className="absolute left-0 top-0 z-[-1] h-full w-full object-cover"
         />
 
         <div className="z-20 ml-20 mt-14 max-w-[450px]">
@@ -153,9 +153,9 @@ const Home = () => {
                 />
               </Link>
               <p className="text-sm text-white lg:w-2/3 lg:text-base">
-                You may have been a Powerpoint before. However you haven&apos;t seen
-                anything like the ones that we design. The jury should be able
-                to understand the evidence and the legal arguments without
+                You may have seen a Powerpoint before. However you haven&apos;t
+                seen anything like the ones that we design. The jury should be
+                able to understand the evidence and the legal arguments without
                 getting bogged down in technical details. Second, the
                 presentations should be persuasive. The lawyer should use clear
                 and powerful language to convince the jury that the plaintiff is
@@ -362,9 +362,9 @@ const Home = () => {
           className="z-0"
         />
 
-        <div className="z-10 ml-20 mt-14 w-[450px]">
+        <div className="z-10 mt-14 w-[450px] pl-20">
           <h1 className="py-3 text-4xl font-semibold tracking-wide text-white">
-            Illustrations
+            Innovative Timelines
           </h1>
         </div>
         <div className="absolute bottom-0 right-0 z-10 mx-10 max-w-4xl pb-6">
@@ -372,20 +372,20 @@ const Home = () => {
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <Link href="#">
                 <Button
-                  name={"View Illustration"}
+                  name={"View Timelines"}
                   type={"button"}
                   className={"border border-white bg-black text-white"}
                 />
               </Link>
               <p className="text-sm text-white">
                 A timeline is a powerful tool that can be used to show the jury
-                the extent of a persons injuries and the amount of treatment
-                they have undergone. The timeline can show the dates of the
-                injuries, the types of treatment. This information can be very
-                helpful to understanding the severity of the injuries and the
-                impact that they have had on someones life. When these timelines
-                hyperlink to the actual treatment documents these timelines
-                become an essential part of trial.
+                the extent of a person&apos;s injuries and the amount of
+                treatment they have undergone. The timeline can show the dates
+                of the injuries, the types of treatment. This information can be
+                very helpful to understanding the severity of the injuries and
+                the impact that they have had on someone&apos;s life. When these
+                timelines hyperlink to the actual treatment documents these
+                timelines become an essential part of trial.
               </p>
             </div>
           </div>
@@ -400,7 +400,7 @@ const Home = () => {
           // objectFit="contain"
           width={1000}
           height={1000}
-          className="z-[-1] absolute top-0 left-0 h-full w-full object-cover"
+          className="absolute left-0 top-0 z-[-1] h-full w-full object-cover"
           // className="z-[-1]"
         />
 
