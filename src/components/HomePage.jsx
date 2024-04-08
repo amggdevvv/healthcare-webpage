@@ -1,78 +1,33 @@
 import React from "react";
-import Button from "./ui/Button";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "./ui/Button";
 
 const Home = () => {
   return (
-    // <div className="flex h-screen w-full flex-col justify-center">
-    //   <video
-    //     autoPlay
-    //     loop
-    //     muted
-    //     id="video"
-    //     class="absolute z-[-1] w-full max-w-none "
-    //   >
-    //     <source src="/videos/video-1.mp4" type="video/mp4" />
-    //     Your browser does not support the video tag.
-    //   </video>
-    //   <div className="absolute left-0 right-0 top-32">
-    //     <div className="">
-    //       <p className="text-center text-sm font-bold uppercase tracking-widest text-gray-400">
-    //         Trail Template
-    //       </p>
-    //       <h2 className="mx-auto w-80 pt-3 text-center text-4xl font-semibold capitalize text-white">
-    //         Flat Rate Subscriptions For Trial Graphics
-    //       </h2>
-    //       <p className="pt-3 text-center text-sm font-bold tracking-wide text-gray-400">
-    //         Litigation & Medical Graphics, Illustrations and Animations
-    //       </p>
-    //     </div>
-    //     <div className="mb-12 mt-[250px] flex items-center justify-center gap-6 sm:mt-[400px]">
-    //       <Link href="#">
-    //         <Button
-    //           name={"Explore This"}
-    //           type={"button"}
-    //           className={"bg-white text-black"}
-    //         />
-    //       </Link>
-    //       <Link href="#">
-    //         <Button
-    //           name={"Scheduled A Demo"}
-    //           type={"button"}
-    //           className={"border-wite border bg-gray-400 text-white"}
-    //         />
-    //       </Link>
-    //     </div>
-    //   </div>
-    // </div>
-
     <main className="flex h-full w-full flex-col">
-      <div className="relative flex h-screen flex-col justify-center">
+      <div className="relative flex h-screen flex-col items-center justify-center">
         <video
           autoPlay
           loop
           muted
           id="video"
-          // className="absolute z-[-1] w-full max-w-none"
-          className="absolute left-0 top-0 z-[-1] h-full w-full object-cover"
+          className="absolute inset-0 z-[-1] h-full w-full object-cover"
         >
           <source src="/videos/video-1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 mt-20 flex flex-col items-center">
-          <div className="text-center">
-            <p className="text-sm font-bold uppercase tracking-widest text-gray-400">
-              Trail Template
-            </p>
-            <h2 className="w-[400px] pt-3 text-lg font-semibold capitalize text-white  sm:text-4xl">
-              Flat Rate Subscriptions For Trial Graphics
-            </h2>
-            <p className="pt-3 text-sm font-bold tracking-wide text-gray-400">
-              Litigation & Medical Graphics, Illustrations and Animations
-            </p>
-          </div>
-          <div className="mb-12 mt-8 flex flex-col gap-6 sm:mt-16 sm:flex-row">
+        <div className="absolute inset-0 mt-20 flex flex-col items-center text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-gray-400 sm:text-sm">
+            Trail Template
+          </p>
+          <h2 className="w-[90%] pt-3 text-lg font-semibold capitalize text-white sm:w-[400px] sm:text-4xl">
+            Flat Rate Subscriptions For Trial Graphics
+          </h2>
+          <p className="pt-3 text-xs font-bold tracking-wide text-gray-400 sm:text-sm">
+            Litigation & Medical Graphics, Illustrations and Animations
+          </p>
+          <div className="mb-8 mt-6 flex flex-col gap-4 sm:mt-10 sm:flex-row">
             <Link href="/subscription-plans">
               <Button
                 name={"Explore This"}
@@ -91,7 +46,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="relative h-screen">
+      <div className="relative h-screen items-center justify-center">
         <Image
           src="/images/spine-illustration-image.webp"
           alt="spine-illustration"
@@ -313,14 +268,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="relative">
-        <div className="">
+      <div className="relative h-full">
+        <div className="relative flex h-full flex-col justify-center">
           <video
             autoPlay
             loop
             muted
             id="video"
-            className="z-[-1] w-full max-w-none"
+            className="aspect-w-16 aspect-h-9 z-[-1] w-full max-w-none object-cover"
           >
             <source src="/videos/car-crash-animation.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -328,7 +283,7 @@ const Home = () => {
         </div>
         <div className="absolute inset-0 flex items-end justify-center">
           <div className="flex w-full flex-col items-end justify-center py-12">
-            <div className="w-full max-w-6xl px-12 lg:px-12">
+            <div className="w-full max-w-6xl px-6 lg:px-12">
               <div className="flex flex-col items-center justify-between lg:flex-row">
                 <Link href="#">
                   <Button
@@ -362,12 +317,12 @@ const Home = () => {
           className="z-0"
         />
 
-        <div className="z-10 mt-14 w-[450px] pl-20">
+        <div className="z-10 mt-14 w-full px-6 sm:w-[450px] sm:pl-20">
           <h1 className="py-3 text-4xl font-semibold tracking-wide text-white">
             Innovative Timelines
           </h1>
         </div>
-        <div className="absolute bottom-0 right-0 z-10 mx-10 max-w-4xl pb-6">
+        <div className="absolute bottom-0 right-0 z-10 mx-6 max-w-full pb-6 sm:mx-10 sm:max-w-4xl">
           <div className="w-full">
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <Link href="#">
@@ -377,7 +332,7 @@ const Home = () => {
                   className={"border border-white bg-black text-white"}
                 />
               </Link>
-              <p className="text-sm text-white">
+              <p className="text-sm text-white sm:max-w-[75%]">
                 A timeline is a powerful tool that can be used to show the jury
                 the extent of a person&apos;s injuries and the amount of
                 treatment they have undergone. The timeline can show the dates
@@ -396,21 +351,18 @@ const Home = () => {
         <Image
           src="/images/Pulmonary-Hypertrophy-image.webp"
           alt="Timelines"
-          // layout="fill"
-          // objectFit="contain"
           width={1000}
           height={1000}
           className="absolute left-0 top-0 z-[-1] h-full w-full object-cover"
-          // className="z-[-1]"
         />
 
-        <div className="z-20 ml-20 mt-14 w-[450px]">
+        <div className="z-20 ml-6 mt-6 sm:ml-20 sm:mt-14 sm:w-[450px]">
           <h1 className="py-3 text-4xl font-semibold tracking-wide text-black">
             Illustrations
           </h1>
         </div>
-        <div className="absolute bottom-0 right-0 z-10 mx-10 max-w-4xl pb-6">
-          <div className="w-full pt-20">
+        <div className="absolute bottom-0 right-0 z-10 mx-6 max-w-full pb-6 sm:mx-10 sm:max-w-4xl">
+          <div className="w-full pt-6 sm:pt-20">
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <Link href="#">
                 <Button
