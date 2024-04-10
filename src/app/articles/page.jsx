@@ -52,14 +52,15 @@ const Article = () => {
           />
         </div>
       </div>
-      <div className="mx-16 my-[8%] flex h-full flex-col items-center">
-        <div className="grid max-w-[600px] grid-cols-1 gap-6 border-b border-gray-200 pb-10 md:grid-cols-2 md:gap-0">
+      <div className="mx-16 my-[8%] grid h-full md:grid-cols-2 grid-cols-1 items-center  gap-6">
+        <div className="grid min-h-[200px] max-w-[600px] grid-cols-1 gap-6 rounded-md border border-gray-200 px-6 py-10 md:grid-cols-2 md:gap-8">
           <div>
             <Image
               src={"/images/articles-image-1.webp"}
-              width={250}
-              height={250}
+              width={500}
+              height={500}
               alt="article-1"
+              className="object-cover w-full h-full aspect-video"
             />
           </div>
           <div>
@@ -77,26 +78,30 @@ const Article = () => {
             </Link>
           </div>
         </div>
-        <div className="grid max-w-[600px] grid-cols-1 gap-6 border-b border-gray-200 py-10 md:grid-cols-2 md:gap-0">
+        <div className="grid min-h-[200px] max-w-[600px] grid-cols-1 gap-6 rounded-md border border-gray-200 px-6 py-10 md:grid-cols-2 md:gap-8">
           <div>
             <Image
               src={"/images/articles-image-2.webp"}
-              width={250}
-              height={250}
+              width={500}
+              height={500}
               alt="article-1"
+              className="object-cover w-full h-full aspect-video"
             />
           </div>
           <div>
             <h1 className="text-xl font-medium tracking-wide md:text-2xl">
               Everything Has Changed. We Have Too. We Can Help.{" "}
             </h1>
-            <p className="py-2 text-sm text-gray-400">
+            <p className="truncate py-2 text-sm text-gray-400">
               Trial Template was created as a means to offer small to mid-sized
               law offices access to the same quality of litigation graphics that
               larger firms have access to, no matter the case value. Our goal is
               to tell your clients stories clearly from big to s…{" "}
             </p>
-            <Link href={"/articles/read-article-2"} className="text-sm font-semibold">
+            <Link
+              href={"/articles/read-article-2"}
+              className="text-sm font-semibold"
+            >
               Read More...
             </Link>
           </div>
