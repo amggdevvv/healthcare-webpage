@@ -48,7 +48,7 @@ const Navbar = () => {
               <div className="h-6 border-r border-gray-500" />
             </li>
             <li className="flex items-center justify-center gap-5">
-              <Link href="/test">Portfolio</Link>
+              <Link href="/portfolios">Portfolio</Link>
               <div className="h-6 border-r border-gray-500" />
             </li>
             <li className="flex items-center justify-center gap-5">
@@ -102,7 +102,7 @@ const Navbar = () => {
                 onClick={()=>setMenuToggle(!menuToggle)}
                 className="cursor-pointer text-[16px] font-medium text-gray-500 w-full px-5 py-2 hover:bg-[#3f444b] hover:text-white"
               >
-                <Link href="/test">Portfolio</Link>
+                <Link href="/portfolios">Portfolio</Link>
               </li>
               <li
                 onClick={()=>setMenuToggle(!menuToggle)}

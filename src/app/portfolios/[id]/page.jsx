@@ -1,13 +1,12 @@
-'use client'
+"use client";
 import React from "react";
 import Link from "next/link";
 import { portfolioData } from "../page";
-import { useRouter } from "next/navigation";
 
-const PortfolioPage = () => {
-//   const router = useRouter();
-//   const { page } = router.query;
-//   const portfolioItem = portfolioData[parseInt(page) - 1];
+const PortfolioPage = ({ params }) => {
+  const portrfolio = portfolioData[params.id - 1];
+  console.log("Portfolio Data==>", portrfolio);
+
   return (
     <div className="my-16 h-full w-full">
       <div className="mx-6 mt-12 md:mx-[96px]">
@@ -16,15 +15,12 @@ const PortfolioPage = () => {
             Trial Template
           </p>
           <h1 className="py-4 text-5xl font-semibold tracking-widest">
-            Truck Animation
-            
+            {portrfolio.title}
           </h1>
           <p className="text-lg  font-semibold text-gray-500">
-            Spearheading truck animations for the legal landscape. From initial
-            demands to court confrontations, our animations vividly depict truck
-            scenarios, enhancing comprehension and bolstering case impact.
-            Efficient, precision-driven, and crafted to captivate the courtroom.
+            {portrfolio.description}
           </p>
+          {/* <p>{portfolioItem.description}</p> */}
         </div>
         <div className="mt-8 flex justify-between border-b border-gray-200 pb-2">
           <p>Written By Trial Template Team</p>
@@ -34,7 +30,7 @@ const PortfolioPage = () => {
           <div className="col-span-2 aspect-auto w-full">
             <iframe
               title="vimeo-player"
-              src="https://player.vimeo.com/video/898607139?h=cc3dbdaaac"
+              src={portrfolio.video}
               width="800"
               height="500"
               className="w-full"
@@ -42,11 +38,22 @@ const PortfolioPage = () => {
               allowfullscreen
             ></iframe>
           </div>
-          <div className="col-span-1 border-l border-gray-200 px-8">
+          <div className="col-span-1 h-[500px] overflow-y-scroll border-l border-gray-200 px-8">
             <p className="border-b border-gray-200 text-lg font-semibold uppercase tracking-widest text-red-950">
               Other Projects
             </p>
-            <Link href={"/portfolios/portfolio2"} className="">
+            {portfolioData.map((data, index) => (
+              <Link key={index} href={`/portfolios/${index + 1}`} className="">
+                <h2 className="py-3 text-2xl font-semibold tracking-wide">
+                  {data.title}
+                </h2>
+
+                <div className="h-[5rem] overflow-hidden border-b border-gray-200 pb-8 font-semibold text-gray-600">
+                  <p className="line-clamp-3">{data.description}</p>
+                </div>
+              </Link>
+            ))}
+            {/* <Link href={"/portfolios/portfolio2"} className="">
               <h2 className="py-3 text-2xl font-semibold tracking-wide">
                 Custom Medical Graphics and Animations{" "}
               </h2>
@@ -66,10 +73,24 @@ const PortfolioPage = () => {
                 From demands to courtroom engagements, our animations depict
                 surgical...
               </p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
+
+      <video
+        autoPlay
+        loop
+        muted
+        id="video"
+        className="absolute inset-0 z-[-1] h-full w-full object-cover"
+      >
+        <source
+          src="https://player.vimeo.com/video/661490695?h=a2422cc5ba"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };
