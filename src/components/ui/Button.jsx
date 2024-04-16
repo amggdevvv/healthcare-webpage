@@ -8,7 +8,7 @@ const Button = ({ name, type, className, onClick }) => {
       <button
         tpe={type}
         onClick={onClick}
-        className={`w-32 rounded-md px-4 py-[10px] text-sm sm:w-56 sm:text-base ${cn}`}
+        className={`w-32 rounded-md px-4 py-[10px] text-[12px] sm:w-56 sm:text-base ${cn}`}
       >
         {name}
       </button>
