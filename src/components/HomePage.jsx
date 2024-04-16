@@ -19,7 +19,7 @@ const Home = () => {
         </video>
         <div className="absolute inset-0 mt-20 flex flex-col items-center text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-gray-400 sm:text-sm">
-            Trail Template
+            Trial Template
           </p>
           <h2 className="w-[90%] pt-3 text-lg font-semibold capitalize text-white sm:w-[400px] sm:text-4xl">
             Flat Rate Subscriptions For Trial Graphics
