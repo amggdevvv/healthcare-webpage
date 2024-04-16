@@ -130,7 +130,7 @@ const Home = () => {
                 Trial Template
               </p>
               <h1 className="py-3 text-4xl font-semibold tracking-wide">
-                We Prepare You From The Begining{" "}
+                We Prepare You From The Beginning{" "}
               </h1>
             </div>
             <div className="border-b border-gray-200  py-6">
