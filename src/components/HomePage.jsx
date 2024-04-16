@@ -275,7 +275,7 @@ const Home = () => {
             loop
             muted
             id="video"
-            className="aspect-w-16 aspect-h-9 z-[-1] w-full max-w-none object-cover"
+            className="aspect-w-16 aspect-h-9 sm:h-auto h-[400px] z-[-1] w-full max-w-none object-cover"
           >
             <source src="/videos/car-crash-animation.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -284,7 +284,7 @@ const Home = () => {
         <div className="absolute inset-0 flex items-end justify-center">
           <div className="flex w-full flex-col items-end justify-center py-12">
             <div className="w-full max-w-6xl px-6 lg:px-12">
-              <div className="flex flex-col items-center justify-between lg:flex-row">
+              <div className="flex gap-5 flex-col items-center justify-between lg:flex-row">
                 <Link href="#">
                   <Button
                     name={"View Animations"}
@@ -307,6 +307,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      
 
       <div className="relative h-screen bg-black">
         <Image
