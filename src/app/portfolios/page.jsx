@@ -83,18 +83,12 @@ export const portfolioData = [
     description:
       "In addition to being helpful for understanding injuries, animations can also be used to explain medical procedures. For example, it can show how a surgeon will repair a broken bone or spinal fusion. Or, it can depict the steps involved in a particular medical operation. This can be helpful for jurors to understand the nature of the injuries and the treatment that the injured person has received.",
   },
-
-
 ];
-
-
-
-
 
 const Home = () => {
   return (
     <main className="my-20 flex h-full w-full flex-col">
-      <div className="mt-16 grid grid-cols-1 gap-8 px-8 md:grid-cols-2">
+      <div className="mt-16 grid grid-cols-1 gap-8 px-8 lg:grid-cols-2">
         {portfolioData.map((portfolio, index) => (
           <Link
             key={index}
@@ -117,11 +111,11 @@ const Home = () => {
                 ></iframe>
               </div>
 
-              <div className="absolute left-12 top-[40%] z-10 flex  min-w-[500px] flex-col">
-                <h3 className="text-xl font-semibold tracking-wider text-white">
+              <div className="absolute left-12 lg:top-[50%] top-[20%] z-10 flex  sm:min-w-[500px] w-[300px] flex-col">
+                <h3 className="text-base font-semibold tracking-wider text-white lg:text-xl pb-6">
                   {portfolio.title}
                 </h3>
-                <p className="text-semibold absolute bottom-0 left-0 top-8 h-full w-full tracking-wide text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <p className="text-semibold absolute bottom-0 left-0 top-8 h-full w-full text-xs tracking-wide text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:text-base lg:text-sm">
                   {portfolio.description}
                 </p>
               </div>
