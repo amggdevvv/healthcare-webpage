@@ -44,9 +44,7 @@ const SubscriptionPlansPage = () => {
               <li className="pt-3 text-sm font-semibold">
                 Two 3D animations per case{" "}
               </li>
-              <li className="pt-3 text-sm font-semibold">
-                Medical Illustrations
-              </li>
+
               <li className="pt-3 text-sm font-semibold">
                 Medical Illustrations{" "}
               </li>
@@ -105,9 +103,7 @@ const SubscriptionPlansPage = () => {
               <li className="pt-3 text-sm font-semibold">
                 Two 3D animations per case{" "}
               </li>
-              <li className="pt-3 text-sm font-semibold">
-                Medical Illustrations
-              </li>
+
               <li className="pt-3 text-sm font-semibold">
                 Medical Illustrations{" "}
               </li>
@@ -167,9 +163,6 @@ const SubscriptionPlansPage = () => {
             <ul className="ml-4 list-disc tracking-wider text-gray-700">
               <li className="pt-3 text-sm font-semibold">
                 Two 3D animations per case{" "}
-              </li>
-              <li className="pt-3 text-sm font-semibold">
-                Medical Illustrations
               </li>
               <li className="pt-3 text-sm font-semibold">
                 Medical Illustrations{" "}
