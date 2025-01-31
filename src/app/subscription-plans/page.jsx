@@ -21,8 +21,8 @@ const SubscriptionPlansPage = () => {
           <div className="border-b border-gray-200 py-6">
             <p className="text-sm font-semibold">Payment Options</p>
             <ul className="ml-4 list-disc text-sm font-semibold tracking-wider text-gray-700">
-              <li className="pt-3">Annual — $18,000/year </li>
-              <li className="pt-3">Monthly — $1,500/month </li>
+              <li className="pt-3">Annual — $24,000/year </li>
+              <li className="pt-3">Monthly — $2,000/month </li>
             </ul>
           </div>
           <div className="my-3 border-b border-gray-200 pb-8">
@@ -84,8 +84,8 @@ const SubscriptionPlansPage = () => {
           <div className="border-b border-gray-200 py-6">
             <p className="text-sm font-semibold">Payment Options</p>
             <ul className="ml-4 list-disc text-sm font-semibold tracking-wider text-gray-700">
-              <li className="pt-3">Annual — $25,000/year</li>
-              <li className="pt-3">Monthly — $2,083.33/month</li>
+              <li className="pt-3">Annual — $30,000/year</li>
+              <li className="pt-3">Monthly — $2,500/month</li>
             </ul>
           </div>
           <div className="my-3 border-b border-gray-200 pb-8">
@@ -143,8 +143,8 @@ const SubscriptionPlansPage = () => {
           <div className="border-b border-gray-200 py-6">
             <p className="text-sm font-semibold">Payment Options</p>
             <ul className="ml-4 list-disc text-sm font-semibold tracking-wider text-gray-700">
-              <li className="pt-3">Annual — $32,000/year </li>
-              <li className="pt-3">Monthly — $2,666.67/month </li>
+              <li className="pt-3">Annual — $40,000/year </li>
+              <li className="pt-3">Monthly — $3,333.33/month </li>
             </ul>
           </div>
           <div className="my-3 border-b border-gray-200 pb-8">
