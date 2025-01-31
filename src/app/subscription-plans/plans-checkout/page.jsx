@@ -68,19 +68,19 @@ function PlansCheckout() {
                 onClick={() => handleClick(0)}
                 isActive={clickedIndex === 0}
                 title="Basic"
-                price="$18,000/annual"
+                price="$24,000/annual"
               />
               <PlanCard
                 onClick={() => handleClick(1)}
                 isActive={clickedIndex === 1}
                 title="Pro"
-                price="$25,000/annual"
+                price="$30,000/annual"
               />
               <PlanCard
                 onClick={() => handleClick(2)}
                 isActive={clickedIndex === 2}
                 title="Platinum"
-                price="$25,000/annual"
+                price="$40,000/annual"
               />
 
               <Button
