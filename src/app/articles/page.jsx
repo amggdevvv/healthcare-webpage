@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { articleData } from "@/utils/data";
 
 // const articlesData = [
 //   {
@@ -52,15 +53,44 @@ const Article = () => {
           />
         </div>
       </div>
-      <div className="mx-16 my-[8%] grid h-full md:grid-cols-2 grid-cols-1 items-center  gap-6">
-        <div className="grid min-h-[200px] max-w-[600px] grid-cols-1 gap-6 rounded-md border border-gray-200 px-6 py-10 md:grid-cols-2 md:gap-8">
+      <div className="mx-16 my-[8%] grid h-full grid-cols-1 items-center gap-6  md:grid-cols-2">
+        {articleData?.map((data) => (
+          <div
+            key={data?.id}
+            className="grid min-h-[200px] max-w-[600px] grid-cols-1 gap-6 rounded-md border border-gray-200 px-6 py-10 md:grid-cols-2 md:gap-8"
+          >
+            <div>
+              <Image
+                src={data?.img_url}
+                width={500}
+                height={500}
+                alt="article-1"
+                className="aspect-video h-full w-full object-cover"
+              />
+            </div>
+            <div>
+              <h1 className="text-xl font-medium tracking-wide md:text-2xl">
+                {data?.title}
+              </h1>
+              <Link
+                href={`/articles/${data?.articleId}`}
+                className="text-sm font-semibold"
+              >
+                <p className="line-clamp-4 my-2 text-sm text-gray-400">
+                  {data?.description}
+                </p>
+              </Link>
+            </div>
+          </div>
+        ))}
+        {/* <div className="grid min-h-[200px] max-w-[600px] grid-cols-1 gap-6 rounded-md border border-gray-200 px-6 py-10 md:grid-cols-2 md:gap-8">
           <div>
             <Image
               src={"/images/articles-image-1.webp"}
               width={500}
               height={500}
               alt="article-1"
-              className="object-cover w-full h-full aspect-video"
+              className="aspect-video h-full w-full object-cover"
             />
           </div>
           <div>
@@ -85,7 +115,7 @@ const Article = () => {
               width={500}
               height={500}
               alt="article-1"
-              className="object-cover w-full h-full aspect-video"
+              className="aspect-video h-full w-full object-cover"
             />
           </div>
           <div>
@@ -105,43 +135,6 @@ const Article = () => {
               Read More...
             </Link>
           </div>
-        </div>
-
-        {/* {articlesData.map((article, index) => (
-          <div
-            key={index}
-            className="mb-8 grid max-w-[600px] grid-cols-1 gap-6 border-b border-gray-200 pb-10 md:grid-cols-2 md:gap-0"
-          >
-            <div>
-              <Image
-                src={article.image}
-                width={250}
-                height={250}
-                alt="article-1"
-              />
-            </div>
-            <div>
-              <h1 className="text-xl font-medium tracking-wide md:text-2xl">
-                {article.title}
-              </h1>
-              <p className="py-2 text-sm text-gray-400">
-                {article.description}{" "}
-              </p>
-              <Link
-                href={`/articles/${article.id}`}
-                as={`/articles/${article.id}`}
-                className="text-sm font-semibold"
-                passHref
-              >
-                Read More...
-              </Link>
-            </div>
-          </div>
-        ))} */}
-
-        {/* <div className="grid grid-cols-2">
-          <div>left</div>
-          <div>right</div>
         </div> */}
       </div>
     </div>
