@@ -2,7 +2,7 @@
 import React from "react";
 import VideoBanner from "@/components/VideoBanner";
 import { FaCheckCircle } from "react-icons/fa";
-import { medical_Illustration as data } from "@/utils/data";
+import { medical_illustration as data } from "@/utils/data";
 import { redirect } from "next/navigation";
 import { useRouter } from "next/navigation";
 
