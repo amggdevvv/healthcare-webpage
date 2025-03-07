@@ -34,28 +34,38 @@ const Navbar = () => {
         </div>
 
         <div className="hidden font-semibold lg:flex">
-          <ul className="flex list-none flex-wrap gap-5 text-xs uppercase tracking-widest">
-            <li className="flex items-center justify-center gap-5">
+          <ul className="flex list-none flex-wrap gap-2 text-xs uppercase tracking-widest">
+            <li className="flex items-center justify-center gap-2">
               <Link href="/">Home</Link>
               <div className="h-6 border-r border-gray-500" />
             </li>
-            <li className="flex items-center justify-center gap-5">
+            <li className="flex items-center justify-center gap-2">
               <Link href="/subscription-plans">Subscription Plans</Link>
               <div className="h-6 border-r border-gray-500" />
             </li>
-            <li className="flex items-center justify-center gap-5">
+            <li className="flex items-center justify-center gap-2">
               <Link href="/articles">Articles</Link>
               <div className="h-6 border-r border-gray-500" />
             </li>
-            <li className="flex items-center justify-center gap-5">
+            <li className="flex items-center justify-center gap-2">
               <Link href="/our-client">Our Clients</Link>
               <div className="h-6 border-r border-gray-500" />
             </li>
-            <li className="flex items-center justify-center gap-5">
+            <li className="flex items-center justify-center gap-2">
               <Link href="/portfolios">Portfolio</Link>
               <div className="h-6 border-r border-gray-500" />
             </li>
-            <li className="flex items-center justify-center gap-5">
+            <li className="flex items-center justify-center gap-2">
+              <Link href="/medical-legal-illustrations">
+                Medical Illustration
+              </Link>
+              <div className="h-6 border-r border-gray-500" />
+            </li>
+            <li className="flex items-center justify-center gap-2">
+              <Link href="/medical-legal-animations">Medical Animations</Link>
+              <div className="h-6 border-r border-gray-500" />
+            </li>
+            <li className="flex items-center justify-center gap-2">
               <Link href="/contact">Contact</Link>
             </li>
           </ul>

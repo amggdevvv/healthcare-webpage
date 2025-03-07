@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { articleData } from "@/utils/data";
+import VideoBanner from "@/components/VideoBanner";
 
 // const articlesData = [
 //   {
@@ -23,36 +24,10 @@ const Article = () => {
   // console.log("Articles data==>", articlesData);
   return (
     <div className="h-full w-full">
-      <div className="flex flex-col justify-center">
-        <div className="relative z-[-1] h-72 w-full">
-          <div className="absolute h-full w-full bg-transparent/70"></div>
-          <video
-            autoPlay
-            loop
-            muted
-            id="video"
-            className=" h-full w-full  object-cover"
-          >
-            <source src="/videos/video-1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div className="absolute left-0 top-1/4 z-10 flex w-full flex-col items-center text-center text-white">
-          <h1 className="text-3xl font-semibold tracking-widest md:text-5xl">
-            TRIAL TEMPLATE ARTICLES
-          </h1>
-          <p className="py-4 text-lg tracking-widest">
-            GRAPHICS, ILLUSTRATIONS & ANIMATIONS
-          </p>
-
-          <Image
-            src="/images/main-logo.webp"
-            alt="Main-Logo"
-            width={70}
-            height={70}
-          />
-        </div>
-      </div>
+      <VideoBanner
+        title="TRIAL TEMPLATE ARTICLES"
+        description="GRAPHICS, ILLUSTRATIONS & ANIMATIONS"
+      />
       <div className="mx-16 my-[8%] grid h-full grid-cols-1 items-center gap-6  md:grid-cols-2">
         {articleData?.map((data) => (
           <div
@@ -76,7 +51,7 @@ const Article = () => {
                 href={`/articles/${data?.articleId}`}
                 className="text-sm font-semibold"
               >
-                <p className="line-clamp-4 my-2 text-sm text-gray-400">
+                <p className="my-2 line-clamp-4 text-sm text-gray-400">
                   {data?.description}
                 </p>
               </Link>
