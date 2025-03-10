@@ -192,3 +192,43 @@ export const threeD_models_data = {
 
 
 
+export const interactive_media_data = {
+    title: "Interactive Media",
+    videoUrl:
+        "https://player.vimeo.com/video/373046092?h=ae1bbb9463&autoplay=1&muted=1&background=1",
+    description:
+        "Our Interactive Display Solutions redefine how legal professionals present their cases. We specialize in Video Production for Law Firms, crafting dynamic courtroom presentations using an Interactive Timeline Template and Trial PowerPoint Presentation solutions.",
+    sections: [
+        {
+            title: "Revolutionizing Legal Presentations",
+            content:
+                "We provide advanced Interactive Display Solutions that help attorneys communicate complex legal cases effortlessly. Whether you need a Court Legal Timeline of Events Template or a detailed Interactive Timeline Creator, our services enhance case clarity.",
+        },
+        {
+            title: "Dynamic Visual Storytelling",
+            content:
+                "Legal professionals rely on our Video Production for Law Firms to deliver compelling narratives. Our litigation visuals and Trial PowerPoint Presentations use high-quality motion graphics to clarify case facts and improve courtroom persuasion.",
+        },
+        {
+            title: "Seamless Interactive Solutions",
+            content:
+                "From Interactive Timeline Templates to customized trial presentations, we ensure attorneys have the best tools. Our solutions combine visual clarity with strategic storytelling to deliver winning arguments in court.",
+        },
+    ],
+    benefits: [
+        "High-impact legal presentations with Interactive Display Solutions.",
+        "Custom Video Production for Law Firms tailored to each case.",
+        "Professional Interactive Timeline Creator for courtroom impact.",
+        "Engaging Trial PowerPoint Presentations to clarify legal arguments.",
+        "Easily adaptable Court Legal Timeline of Events Template for case strategy.",
+    ],
+    cta: {
+        buttonText: "Consult Our Experts",
+        buttonLink: "/contact",
+    },
+};
+
+
+
+
+
