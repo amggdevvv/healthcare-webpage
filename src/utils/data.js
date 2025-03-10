@@ -159,3 +159,36 @@ export const medical_animation = {
 };
 
 
+export const threeD_models_data = {
+    title: "3D Models",
+    description:
+        "Elevate your projects with high-quality 3D Modeling and Animation. We bring ideas to life with immersive, photorealistic 3D visuals.",
+    videoUrl: "https://player.vimeo.com/video/898607139?h=cc3dbdaaac",
+    sections: [
+        {
+            title: "High-Quality 3D Modeling and Animation",
+            content:
+                "Our expert team specializes in 3D Modeling and Animation, creating stunning visuals for a variety of industries, including medical, architectural, and product design. We use cutting-edge technology to craft precise, dynamic models that bring your concepts to life.",
+        },
+        {
+            title: "Custom 3D Models",
+            content:
+                "Whether you need character designs, product prototypes, or architectural renders, our 3D Animation Model Maker service ensures high-quality, realistic results.",
+        },
+        {
+            title: "Animation & Motion Graphics",
+            content:
+                "Our animations add depth and realism, making them ideal for marketing, presentations, and educational visuals.",
+        },
+    ],
+    cta: {
+        title: "Ready to Bring Your Ideas to Life?",
+        content:
+            "Let’s create stunning 3D Animation Models that exceed expectations. Get in touch today!",
+        buttonText: "Contact Us Now",
+        buttonLink: "/contact",
+    },
+};
+
+
+
