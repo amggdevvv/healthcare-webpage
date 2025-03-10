@@ -55,6 +55,14 @@ const Navbar = () => {
               <Link href="/portfolios">Portfolio</Link>
               <div className="h-6 border-r border-gray-500" />
             </li>
+            {/* <li className="flex items-center justify-center gap-5">
+              <Link href="/medical-legal-illustrations">Medical Illustration</Link>
+              <div className="h-6 border-r border-gray-500" />
+            </li>
+            <li className="flex items-center justify-center gap-5">
+              <Link href="/medical-legal-animations">Medical Illustration</Link>
+              <div className="h-6 border-r border-gray-500" />
+            </li> */}
             <li className="flex items-center justify-center gap-5">
               <Link href="/contact">Contact</Link>
             </li>
