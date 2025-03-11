@@ -159,3 +159,76 @@ export const medical_animation = {
 };
 
 
+export const threeD_models_data = {
+    title: "3D Models",
+    description:
+        "Elevate your projects with high-quality 3D Modeling and Animation. We bring ideas to life with immersive, photorealistic 3D visuals.",
+    videoUrl: "https://player.vimeo.com/video/898607139?h=cc3dbdaaac",
+    sections: [
+        {
+            title: "High-Quality 3D Modeling and Animation",
+            content:
+                "Our expert team specializes in 3D Modeling and Animation, creating stunning visuals for a variety of industries, including medical, architectural, and product design. We use cutting-edge technology to craft precise, dynamic models that bring your concepts to life.",
+        },
+        {
+            title: "Custom 3D Models",
+            content:
+                "Whether you need character designs, product prototypes, or architectural renders, our 3D Animation Model Maker service ensures high-quality, realistic results.",
+        },
+        {
+            title: "Animation & Motion Graphics",
+            content:
+                "Our animations add depth and realism, making them ideal for marketing, presentations, and educational visuals.",
+        },
+    ],
+    cta: {
+        title: "Ready to Bring Your Ideas to Life?",
+        content:
+            "Let’s create stunning 3D Animation Models that exceed expectations. Get in touch today!",
+        buttonText: "Contact Us Now",
+        buttonLink: "/contact",
+    },
+};
+
+
+
+export const interactive_media_data = {
+    title: "Interactive Media",
+    videoUrl:
+        "https://player.vimeo.com/video/373046092?h=ae1bbb9463&autoplay=1&muted=1&background=1",
+    description:
+        "Our Interactive Display Solutions redefine how legal professionals present their cases. We specialize in Video Production for Law Firms, crafting dynamic courtroom presentations using an Interactive Timeline Template and Trial PowerPoint Presentation solutions.",
+    sections: [
+        {
+            title: "Revolutionizing Legal Presentations",
+            content:
+                "We provide advanced Interactive Display Solutions that help attorneys communicate complex legal cases effortlessly. Whether you need a Court Legal Timeline of Events Template or a detailed Interactive Timeline Creator, our services enhance case clarity.",
+        },
+        {
+            title: "Dynamic Visual Storytelling",
+            content:
+                "Legal professionals rely on our Video Production for Law Firms to deliver compelling narratives. Our litigation visuals and Trial PowerPoint Presentations use high-quality motion graphics to clarify case facts and improve courtroom persuasion.",
+        },
+        {
+            title: "Seamless Interactive Solutions",
+            content:
+                "From Interactive Timeline Templates to customized trial presentations, we ensure attorneys have the best tools. Our solutions combine visual clarity with strategic storytelling to deliver winning arguments in court.",
+        },
+    ],
+    benefits: [
+        "High-impact legal presentations with Interactive Display Solutions.",
+        "Custom Video Production for Law Firms tailored to each case.",
+        "Professional Interactive Timeline Creator for courtroom impact.",
+        "Engaging Trial PowerPoint Presentations to clarify legal arguments.",
+        "Easily adaptable Court Legal Timeline of Events Template for case strategy.",
+    ],
+    cta: {
+        buttonText: "Consult Our Experts",
+        buttonLink: "/contact",
+    },
+};
+
+
+
+
+

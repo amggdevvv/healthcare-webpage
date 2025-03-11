@@ -3,8 +3,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaTwitter, FaVimeo } from "react-icons/fa";
-import { useParams, useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
 
 const Footer = () => {
   return (
@@ -60,6 +58,12 @@ const Footer = () => {
             href="/medical-legal-animations"
           >
             Medical Animations
+          </Link>
+          <Link
+            className="duration-200 hover:text-gray-500"
+            href="/medical-legal-3d-models"
+          >
+            3D Models
           </Link>
         </div>
         <div className="flex items-center justify-center gap-6 text-gray-400 md:mt-0">
