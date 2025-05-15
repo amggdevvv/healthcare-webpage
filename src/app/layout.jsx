@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { notFound } from 'next/navigation'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +13,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  const isNotFoundPage = typeof window !== 'undefined' && window.location.pathname === '/not-found'
+
+  if (isNotFoundPage) {
+    return <>{children}</> // No navbar/footer
+  }
+
   return (
     <html lang="en">
       <head>

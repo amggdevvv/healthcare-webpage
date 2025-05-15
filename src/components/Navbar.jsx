@@ -91,12 +91,12 @@ const Navbar = () => {
               >
                 <Link href={"/"}>Home </Link>
               </li>
-              <li
+              {/* <li
                 onClick={() => setMenuToggle(!menuToggle)}
                 className="w-full cursor-pointer px-5 py-2 text-[16px] font-medium text-gray-500 hover:bg-[#3f444b] hover:text-white"
               >
                 <Link href="/subscription-plans">Subscription Plans</Link>
-              </li>
+              </li> */}
               <li
                 onClick={() => setMenuToggle(!menuToggle)}
                 className="w-full cursor-pointer px-5 py-2 text-[16px] font-medium text-gray-500 hover:bg-[#3f444b] hover:text-white"
