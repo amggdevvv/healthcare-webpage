@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { notFound } from 'next/navigation'
+import LayoutWrapper from "@/components/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,26 +13,17 @@ export const metadata = {
     " Expert medical illustration services, including 3D animations and case illustrations for personal injury. Visualize complex medical concepts effectively.",
 };
 
-export default function RootLayout({ children }) {
-
-  const isNotFoundPage = typeof window !== 'undefined' && window.location.pathname === '/not-found'
-
-  if (isNotFoundPage) {
-    return <>{children}</> // No navbar/footer
-  }
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
         <link rel="icon" href="/trial-template-icon.png" />
       </head>
       <body className={inter.className}>
-        <Navbar />
-        <main>{children}</main>
-        <div className="w-full">
-          <Footer />
-        </div>
+        {/* LayoutWrapper will decide whether to show Navbar/Footer */}
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );
 }
+
