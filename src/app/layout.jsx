@@ -13,7 +13,7 @@ export const metadata = {
     " Expert medical illustration services, including 3D animations and case illustrations for personal injury. Visualize complex medical concepts effectively.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
