@@ -1,7 +1,88 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { portfolioData } from "../page";
+
+const portfolioData = [
+  {
+    url: "https://player.vimeo.com/video/898607139?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
+    video: "https://player.vimeo.com/video/898607139?h=cc3dbdaaac",
+    title: "Truck Animation",
+    description:
+      "Spearheading truck animations for the legal landscape. From initial demands to court confrontations, our animations vividly depict truck scenarios, enhancing comprehension and bolstering case impact. Efficient, precision-driven, and crafted to captivate the courtroom.",
+  },
+
+  {
+    url: "https://player.vimeo.com/video/742413974?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
+    video: "https://player.vimeo.com/video/742413974?h=9abac872fc",
+    title: "Custom Medical Graphics And Animations",
+    description:
+      " In addition to being helpful for understanding injuries, animations can also be used to explain medical procedures. For example, it can show how a surgeon will repair a broken bone or spinal fusion. Or, it can depict the steps involved in a particular medical operation. This can be helpful for jurors to understand the nature of the injuries and the treatment that the injured person has received.",
+  },
+
+  {
+    url: "https://player.vimeo.com/video/849565783?h=4272b3347b?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
+    video: "https://player.vimeo.com/video/849565783?h=4272b3347b",
+    title: "Wrist Arthroscopy",
+    description:
+      "In addition to being helpful for understanding injuries, animations can also be used to explain medical procedures. For example, it can show how a surgeon will repair a broken bone or spinal fusion. Or, it can depict the steps involved in a particular medical operation. This can be helpful for jurors to understand the nature of the injuries and the treatment that the injured person has received.",
+  },
+
+  {
+    url: "https://player.vimeo.com/video/849556238?h=ca29201c75?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
+    video: "https://player.vimeo.com/video/849556238?h=ca29201c75",
+    title: "2023 Interactive Location of Injuries Presentation",
+    description:
+      "In addition to being helpful for understanding injuries, animations can also be used to explain medical procedures. For example, it can show how a surgeon will repair a broken bone or spinal fusion. Or, it can depict the steps involved in a particular medical operation. This can be helpful for jurors to understand the nature of the injuries and the treatment that the injured person has received.",
+  },
+
+  {
+    url: "https://player.vimeo.com/video/838423197?h=eec94f45e5?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
+    video: "https://player.vimeo.com/video/838423197?h=eec94f45e5",
+    title: "Collision Animation Evolution",
+    description:
+      "In addition to being helpful for understanding injuries, animations can also be used to explain medical procedures. For example, it can show how a surgeon will repair a broken bone or spinal fusion. Or, it can depict the steps involved in a particular medical operation. This can be helpful for jurors to understand the nature of the injuries and the treatment that the injured person has received.",
+  },
+
+  {
+    url: "https://player.vimeo.com/video/922132591?h=2506773c63?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
+    video: "https://player.vimeo.com/video/922132591?h=2506773c63",
+    title: "RV Collision",
+    description:
+      "In addition to being helpful for understanding injuries, animations can also be used to explain medical procedures. For example, it can show how a surgeon will repair a broken bone or spinal fusion. Or, it can depict the steps involved in a particular medical operation. This can be helpful for jurors to understand the nature of the injuries and the treatment that the injured person has received.",
+  },
+
+  {
+    url: "https://player.vimeo.com/video/728630859?h=adc178befa?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
+    video: "https://player.vimeo.com/video/728630859?h=adc178befa",
+    title: "Hyperlinked Timelines",
+    description:
+      "In addition to being helpful for understanding injuries, animations can also be used to explain medical procedures. For example, it can show how a surgeon will repair a broken bone or spinal fusion. Or, it can depict the steps involved in a particular medical operation. This can be helpful for jurors to understand the nature of the injuries and the treatment that the injured person has received.",
+  },
+
+  {
+    url: "https://player.vimeo.com/video/728621053?h=88b7bde085?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
+    video: "https://player.vimeo.com/video/728621053?h=88b7bde085",
+    title: "Custom Illustrations",
+    description:
+      "In addition to being helpful for understanding injuries, animations can also be used to explain medical procedures. For example, it can show how a surgeon will repair a broken bone or spinal fusion. Or, it can depict the steps involved in a particular medical operation. This can be helpful for jurors to understand the nature of the injuries and the treatment that the injured person has received.",
+  },
+
+  {
+    url: "https://player.vimeo.com/video/359122413?h=34ba9f54c5?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
+    video: "https://player.vimeo.com/video/359122413?h=34ba9f54c5",
+    title: "TBI and Axonal Shearing",
+    description:
+      "In addition to being helpful for understanding injuries, animations can also be used to explain medical procedures. For example, it can show how a surgeon will repair a broken bone or spinal fusion. Or, it can depict the steps involved in a particular medical operation. This can be helpful for jurors to understand the nature of the injuries and the treatment that the injured person has received.",
+  },
+
+  {
+    url: "https://player.vimeo.com/video/346308016?h=d4e5dbed31?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
+    video: "https://player.vimeo.com/video/346308016?h=d4e5dbed31",
+    title: "Rural Truck Collision",
+    description:
+      "In addition to being helpful for understanding injuries, animations can also be used to explain medical procedures. For example, it can show how a surgeon will repair a broken bone or spinal fusion. Or, it can depict the steps involved in a particular medical operation. This can be helpful for jurors to understand the nature of the injuries and the treatment that the injured person has received.",
+  },
+];
 
 const PortfolioPage = ({ params }) => {
   const portrfolio = portfolioData[params.id - 1];

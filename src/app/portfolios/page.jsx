@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 
-export const portfolioData = [
+const portfolioData = [
   {
     url: "https://player.vimeo.com/video/898607139?muted=1&autoplay=1&loop=1&background=1&app_id=122963",
     video: "https://player.vimeo.com/video/898607139?h=cc3dbdaaac",
@@ -85,15 +85,14 @@ export const portfolioData = [
   },
 ];
 
-const Home = () => {
+// Mark the component as a Server Component and make it async
+async function Page() {
   return (
     <main className="my-20 flex h-full w-full flex-col">
       <div className="mt-16 grid grid-cols-1 gap-8 px-8 lg:grid-cols-2">
         {portfolioData.map((portfolio, index) => (
           <Link
             key={index}
-            // href={`/test/${portfolio.title.toLowerCase().replace(/\s+/g, "-")}?page=${index + 1}`}
-            // href={`/test/portfolio${index + 1}`}
             href={`/portfolios/${index + 1}`}
             className="flex-shrink-1 group w-full cursor-pointer overflow-hidden"
           >
@@ -101,8 +100,6 @@ const Home = () => {
               <div className="h-0 pt-[56.25%]">
                 <iframe
                   src={portfolio.url}
-                  // width="100%"
-                  // height="500"
                   frameborder="0"
                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                   title={portfolio.title}
@@ -125,6 +122,6 @@ const Home = () => {
       </div>
     </main>
   );
-};
+}
 
-export default Home;
+export default Page;
